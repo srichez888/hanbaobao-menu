@@ -5,9 +5,9 @@
     "en": "Hanbaobao"
   },
   "spiceNote": {
-    "fr": "Niveau de piment au choix — Léger  /  Moyen  /  Fort",
-    "cn": "辣度可选（微辣、中辣、特辣）",
-    "en": "Spice level of your choice — Mild  /  Medium  /  Hot"
+    "fr": "Sauce piquante — Léger / Moyen / Fort · En bouillon = non piquant",
+    "cn": "辣度可选（微辣、中辣、特辣）· 汤类不辣",
+    "en": "Spicy sauce — Mild / Medium / Hot · In broth = not spicy"
   },
   "tagline": {
     "fr": "Wontons — Nouilles — Riz",
@@ -88,7 +88,8 @@
             "cn": "素馄饨",
             "en": "Veggie wontons"
           },
-          "price": "13.80"
+          "price": "13.80",
+          "vegetarian": true
         },
         {
           "name": {
@@ -246,7 +247,7 @@
             "cn": "肉臊杂酱汤粉",
             "en": "Minced pork Rice Vermicelli Soup"
           },
-          "price": "14.80"
+          "price": "15.80"
         },
         {
           "name": {
@@ -329,7 +330,8 @@
             "cn": "蔬菜盖饭",
             "en": "Vegetarian rice"
           },
-          "price": "13.80"
+          "price": "13.80",
+          "vegetarian": true
         },
         {
           "name": {
@@ -364,7 +366,8 @@
             "cn": "素包子",
             "en": "Vegetable Baozi"
           },
-          "price": "3.80"
+          "price": "3.80",
+          "vegetarian": true
         },
         {
           "name": {
@@ -407,7 +410,8 @@
             "cn": "凉拌时蔬",
             "en": "Chinese salad"
           },
-          "price": "5.00"
+          "price": "5.00",
+          "vegetarian": true
         },
         {
           "name": {
@@ -423,7 +427,8 @@
             "cn": "自制泡菜",
             "en": "Homemade pickles"
           },
-          "price": "3.50"
+          "price": "3.50",
+          "vegetarian": true
         }
       ]
     },
@@ -606,7 +611,8 @@
             "cn": "糖浆水（柠檬/桃子/草莓/香草/甜瓜）",
             "en": "Syrup (lemon, peach, strawberry, vanilla, melon)"
           },
-          "price": "3.50"
+          "price": "3.50",
+          "vegetarian": true
         }
       ]
     },
@@ -778,7 +784,7 @@
             "cn": "姜汁啤酒",
             "en": "Ginger beer"
           },
-          "price": "6.00"
+          "price": "7.50"
         }
       ]
     },
@@ -856,6 +862,7 @@
             "cn": "素菜包子 x2",
             "en": "Vegetarian baozi x 2"
           },
+          "vegetarian": true,
           "description": {
             "fr": "+ boisson au choix ou petit accompagnement",
             "cn": "+ 指定饮品 或 小菜",
@@ -935,6 +942,7 @@
             "cn": "蔬菜馄饨 + 包子（口味可选）",
             "en": "Vegetarian wontons + baozi of your choice"
           },
+          "vegetarian": true,
           "price": "16.80"
         },
         {
