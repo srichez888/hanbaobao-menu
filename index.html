@@ -5,7 +5,7 @@
 <title>Hanbaobao — Menu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Nunito+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.8/dist/handlebars.min.js"></script>
 <style>
   @page {
@@ -115,13 +115,10 @@
     margin: 0 auto;
   }
 
-  .header-chinese {
-    font-size: 10.5pt;
-    font-weight: 700;
-    color: #1A2C5B;
-    letter-spacing: 5pt;
-    display: block;
-    margin-top: 0.5mm;
+  .cn {
+    font-family: "Long Cang", cursive;
+    font-size: 0.9em;
+    opacity: 0.7;
   }
 
   .header-title {
@@ -163,7 +160,6 @@
     padding: 3mm 3.5mm 3.5mm;
     break-inside: avoid;
     page-break-inside: avoid;
-    margin-top: 5mm;
   }
 
   .card-header {
@@ -197,33 +193,12 @@
     line-height: 1.2;
   }
 
-  .card-title-cn {
-    font-size: 8.5pt;
-    font-weight: 600;
-    color: var(--c, #8D6E63);
-    letter-spacing: 1pt;
-    line-height: 1.2;
-    margin-top: 0.3mm;
-  }
-
   .card-subtitle {
     font-size: 9pt;
     color: #7B5A4A;
     letter-spacing: 0.3pt;
     font-style: italic;
     line-height: 1.3;
-  }
-
-  .card-subtitle-cn {
-    font-size: 8pt;
-    color: #7B5A4A;
-    letter-spacing: 0.2pt;
-    font-style: italic;
-    line-height: 1.3;
-  }
-
-  .chip-cn {
-    font-size: 8.5pt;
   }
 
   .card-subtitle-row {
@@ -247,19 +222,20 @@
   /* ── Item row ── */
   .item-row {
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
-    gap: 2mm;
     min-height: 0;
   }
 
   .item-group {
-    margin-bottom: 2.5mm;
+    margin-bottom: 1.5mm;
   }
 
   .item-group:last-child {
     margin-bottom: 0;
   }
 
+  
   .item-name {
     font-size: 10pt;
     font-weight: 600;
@@ -271,38 +247,13 @@
     text-transform: capitalize;
   }
 
-  .item-name-cn {
-    font-size: 8.5pt;
-    font-weight: 500;
-    color: #8D6E63;
-    line-height: 1.3;
-    margin-top: 0.2mm;
-  }
-
-  .item-dots {
-    flex: 1;
-    min-width: 3mm;
-    position: relative;
-    align-self: stretch;
-  }
-
-  .item-dots::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 1.5px dotted #BBA99A;
-    margin-bottom: 2px;
-  }
-
   .item-price {
     font-size: 10pt;
     font-weight: 700;
     color: #2D1A0E;
     white-space: nowrap;
     flex-shrink: 0;
-    align-self: flex-end;
+    align-self: baseline;
   }
 
   .item-desc {
@@ -311,10 +262,6 @@
     font-style: italic;
     margin-top: 0.5mm;
     line-height: 1.35;
-  }
-
-  .desc-cn {
-    font-size: 8pt;
   }
 
   /* ── Card photos ── */
@@ -381,6 +328,11 @@
 </head>
 <body>
 
+<div class="lang-toggle">
+  <button id="btn-fr" class="active" onclick="setLang('fr')">FR</button>
+  <button id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
 <script id="tpl-menu" type="text/x-handlebars-template">
 {{#each pages}}
 <div class="page">
@@ -388,7 +340,7 @@
     <img class="header-logo" src="images/logoImage.svg" alt="logo">
     <div class="header-center">
       <img class="header-name-img" src="images/logoText.svg" alt="HANBAOBAO">
-      <span class="header-tagline">{{../tagline.fr}} · {{../tagline.cn}}</span>
+      <span class="header-tagline">{{t ../tagline}}</span>
     </div>
   </div>
 
@@ -410,22 +362,22 @@
   <div class="card-header">
     {{#if icon}}<img class="card-icon" src="{{icon}}" alt="">{{/if}}
     <div class="card-header-text">
-      <div class="card-title">{{title.fr}}</div>
-      {{#if title.cn}}<div class="card-title-cn">{{title.cn}}</div>{{/if}}
+      <div class="card-title">{{t title}}</div>
+      {{#if title.cn}}<div class="cn">{{title.cn}}</div>{{/if}}
       {{#if subtitle}}
       <div class="card-subtitle-row">
-        <span class="card-subtitle">{{subtitle.fr}}</span>
+        <span class="card-subtitle">{{t subtitle}}</span>
         {{#if chips}}
         {{#each chips}}
-        <span class="chip" style="--chip-c:{{color}}">{{this.fr}}</span>
+        <span class="chip" style="--chip-c:{{color}}">{{t this}}</span>
         {{/each}}
         {{/if}}
       </div>
       <div class="card-subtitle-row">
-        <span class="card-subtitle card-subtitle-cn">{{subtitle.cn}}</span>
+        <span class="card-subtitle cn">{{subtitle.cn}}</span>
         {{#if chips}}
         {{#each chips}}
-        <span class="chip chip-cn" style="--chip-c:{{color}}">{{this.cn}}</span>
+        <span class="chip cn" style="--chip-c:{{color}}">{{this.cn}}</span>
         {{/each}}
         {{/if}}
       </div>
@@ -433,12 +385,12 @@
       {{#if chips}}
       <div class="card-subtitle-row">
         {{#each chips}}
-        <span class="chip" style="--chip-c:{{color}}">{{this.fr}}</span>
+        <span class="chip" style="--chip-c:{{color}}">{{t this}}</span>
         {{/each}}
       </div>
       <div class="card-subtitle-row">
         {{#each chips}}
-        <span class="chip chip-cn" style="--chip-c:{{color}}">{{this.cn}}</span>
+        <span class="chip cn" style="--chip-c:{{color}}">{{this.cn}}</span>
         {{/each}}
       </div>
       {{/if}}
@@ -450,17 +402,16 @@
       {{#each items}}
       <div class="item-group">
         <div class="item-row">
-          <div class="item-name">{{name.fr}}</div>
-          <div class="item-dots"></div>
+          <div class="item-name">{{t name}}</div>
           <div class="item-price">{{price}}&nbsp;€</div>
         </div>
-        {{#if name.cn}}<div class="item-name-cn">{{name.cn}}</div>{{/if}}
-        {{#if description}}<div class="item-desc">{{description.fr}}<br><span class="desc-cn">{{description.cn}}</span></div>{{/if}}
+        {{#if name.cn}}<div class="cn">{{name.cn}}</div>{{/if}}
+        {{#if description}}<div class="item-desc">{{t description}}<br><span class="cn">{{description.cn}}</span></div>{{/if}}
       </div>
       {{/each}}
     </div>
     {{#if spiceNote}}
-    <div class="spice-note">{{spiceNote.fr}}<br>{{spiceNote.cn}}</div>
+    <div class="spice-note">{{t spiceNote}}<br><span class="cn">{{spiceNote.cn}}</span></div>
     {{/if}}
     {{#if sectionImages}}
       {{#each sectionImages}}
@@ -476,10 +427,19 @@
 
 <script>
 (function() {
+  var currentLang = 'fr';
+  var menuData = null;
+
+  Handlebars.registerHelper('t', function(obj) {
+    if (typeof obj === 'string') return obj;
+    if (!obj) return '';
+    return obj[currentLang] || obj.fr || obj.en || '';
+  });
+
   Handlebars.registerPartial('card', document.getElementById('tpl-card').innerHTML);
   var tpl = Handlebars.compile(document.getElementById('tpl-menu').innerHTML);
 
-  function render(menuData) {
+  function render() {
     var byPage = {};
     Object.keys(menuData.sections).forEach(function(key) {
       var s = Object.assign({ id: key }, menuData.sections[key]);
@@ -503,9 +463,16 @@
     });
   }
 
+  window.setLang = function(lang) {
+    currentLang = lang;
+    document.getElementById('btn-fr').className = lang === 'fr' ? 'active' : '';
+    document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
+    render();
+  };
+
   fetch('menu.json')
     .then(function(r) { return r.json(); })
-    .then(render);
+    .then(function(data) { menuData = data; render(); });
 })();
 </script>
 

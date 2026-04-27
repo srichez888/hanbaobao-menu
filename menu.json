@@ -182,7 +182,7 @@
     "vermicelles": {
       "page": 1,
       "column": 2,
-      "rank": 2,
+      "rank": 1,
       "isSpicy": true,
       "color": "#D4A8C8",
       "icon": "images/icons/icon_vermicelles.svg",
@@ -259,9 +259,9 @@
       ]
     },
     "riz": {
-      "page": 2,
-      "column": 1,
-      "rank": 1,
+      "page": 1,
+      "column": 2,
+      "rank": 2,
       "color": "#C9A87C",
       "sectionImages": [
         {
@@ -344,7 +344,7 @@
     "baozi": {
       "page": 2,
       "column": 1,
-      "rank": 2,
+      "rank": 1,
       "color": "#A8C89A",
       "sectionImages": [
         {
@@ -386,8 +386,8 @@
     },
     "smallDish": {
       "page": 2,
-      "column": 1,
-      "rank": 3,
+      "column": 2,
+      "rank": 1,
       "color": "#B5C9A1",
       "sectionImages": [
         {
@@ -430,7 +430,7 @@
     "cafes": {
       "page": 3,
       "column": 1,
-      "rank": 2,
+      "rank": 1,
       "color": "#B0948A",
       "icon": "images/icons/icon_cafes.svg",
       "title": {
@@ -484,7 +484,7 @@
     "thes-infusions": {
       "page": 3,
       "column": 1,
-      "rank": 3,
+      "rank": 2,
       "color": "#8DB874",
       "icon": "images/icons/icon_thes.svg",
       "title": {
@@ -514,7 +514,7 @@
     "specialites": {
       "page": 3,
       "column": 2,
-      "rank": 3,
+      "rank": 1,
       "color": "#F0C06E",
       "icon": "images/icons/icon_specialites.svg",
       "title": {
@@ -706,8 +706,8 @@
     },
     "alcool": {
       "page": 2,
-      "column": 2,
-      "rank": 1,
+      "column": 1,
+      "rank": 3,
       "color": "#7E6B99",
       "icon": "images/icons/icon_boissons.svg",
       "title": {
@@ -771,13 +771,21 @@
             "en": "Plum wine / lychee wine / osmanthus wine (200 ml)"
           },
           "price": "9.80"
+        },
+        {
+          "name": {
+            "fr": "Bière de gingembre",
+            "cn": "姜汁啤酒",
+            "en": "Ginger beer"
+          },
+          "price": "6.00"
         }
       ]
     },
     "desserts": {
-      "page": 3,
+      "page": 2,
       "column": 1,
-      "rank": 1,
+      "rank": 2,
       "color": "#E8A0B8",
       "sectionImages": [
         {
