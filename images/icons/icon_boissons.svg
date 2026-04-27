@@ -1,5 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="48" fill="#1565C0"/>
   <g transform="translate(50,50)">
     <!-- Glass cup -->
     <path d="M-14,-18 L-12,16 Q-12,22 0,22 Q12,22 12,16 L14,-18 Z" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>

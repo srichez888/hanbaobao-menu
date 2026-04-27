@@ -1,15 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="48" fill="#2E7D32"/>
-  <g transform="translate(50,52)">
+  <g transform="translate(50,50)">
+    <!-- Steamer basket bottom -->
+    <ellipse cx="0" cy="12" rx="26" ry="6" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
     <!-- Baozi body -->
-    <ellipse cx="0" cy="4" rx="22" ry="14" fill="none" stroke="#fff" stroke-width="2.5"/>
-    <!-- Top dome -->
-    <path d="M-22,4 Q-22,-14 0,-16 Q22,-14 22,4" fill="none" stroke="#fff" stroke-width="2.5"/>
-    <!-- Pleats on top -->
-    <path d="M-8,-14 Q-4,-18 0,-16" fill="none" stroke="#fff" stroke-width="1.8"/>
-    <path d="M8,-14 Q4,-18 0,-16" fill="none" stroke="#fff" stroke-width="1.8"/>
-    <path d="M0,-16 Q0,-20 0,-16" fill="none" stroke="#fff" stroke-width="1.8"/>
-    <!-- Center dot -->
-    <circle cx="0" cy="-14" r="2" fill="#fff"/>
+    <path d="M-24,8 C-24,-8 -16,-18 0,-20 C16,-18 24,-8 24,8 C24,14 14,18 0,18 C-14,18 -24,14 -24,8 Z" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <!-- Pleats radiating from center -->
+    <path d="M0,-20 C-2,-14 -6,-10 -10,-2" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.7"/>
+    <path d="M0,-20 C2,-14 6,-10 10,-2" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.7"/>
+    <path d="M0,-20 C-4,-12 -10,-6 -16,2" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.7"/>
+    <path d="M0,-20 C4,-12 10,-6 16,2" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.7"/>
+    <path d="M0,-20 C0,-10 0,-4 0,4" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.7"/>
+    <!-- Center twist -->
+    <circle cx="0" cy="-18" r="3" fill="#fff" opacity="0.9"/>
   </g>
 </svg>

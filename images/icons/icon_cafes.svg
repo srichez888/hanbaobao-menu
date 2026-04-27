@@ -1,5 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="48" fill="#4E342E"/>
   <g transform="translate(50,50)">
     <!-- Coffee cup -->
     <path d="M-14,-14 L-12,14 Q-12,20 0,20 Q12,20 12,14 L14,-14 Z" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>

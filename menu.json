@@ -20,7 +20,7 @@
       "column": 1,
       "rank": 1,
       "isSpicy": true,
-      "color": "#FCBC9C",
+      "color": "#F4A8A0",
       "sectionImages": [
         {
           "src": "images/sections/wonton.png"
@@ -105,7 +105,7 @@
       "column": 1,
       "rank": 2,
       "isSpicy": true,
-      "color": "#BDC3AD",
+      "color": "#C9B89F",
       "icon": "images/icons/icon_nouilles.svg",
       "title": {
         "fr": "Nouilles",
@@ -184,7 +184,7 @@
       "column": 2,
       "rank": 2,
       "isSpicy": true,
-      "color": "#BA85A2",
+      "color": "#D4A8C8",
       "icon": "images/icons/icon_vermicelles.svg",
       "title": {
         "fr": "Vermicelles",
@@ -262,7 +262,7 @@
       "page": 1,
       "column": 2,
       "rank": 1,
-      "color": "#7B5E40",
+      "color": "#C9A87C",
       "sectionImages": [
         {
           "src": "images/sections/idk.png"
@@ -345,7 +345,7 @@
       "page": 1,
       "column": 1,
       "rank": 3,
-      "color": "#2E7D32",
+      "color": "#A8C89A",
       "sectionImages": [
         {
           "src": "images/sections/baozi.png"
@@ -388,7 +388,7 @@
       "page": 1,
       "column": 2,
       "rank": 4,
-      "color": "#2E7D32",
+      "color": "#B5C9A1",
       "sectionImages": [
         {
           "src": "images/sections/wd.png"
@@ -431,7 +431,7 @@
       "page": 2,
       "column": 1,
       "rank": 2,
-      "color": "#4E342E",
+      "color": "#B0948A",
       "icon": "images/icons/icon_cafes.svg",
       "title": {
         "fr": "Cafés",
@@ -485,7 +485,7 @@
       "page": 2,
       "column": 1,
       "rank": 3,
-      "color": "#558B2F",
+      "color": "#8DB874",
       "icon": "images/icons/icon_thes.svg",
       "title": {
         "fr": "Thés & infusions",
@@ -515,7 +515,7 @@
       "page": 2,
       "column": 2,
       "rank": 3,
-      "color": "#F57F17",
+      "color": "#F0C06E",
       "icon": "images/icons/icon_specialites.svg",
       "title": {
         "fr": "Spécialités",
@@ -614,7 +614,7 @@
       "page": 2,
       "column": 2,
       "rank": 4,
-      "color": "#1565C0",
+      "color": "#8EB8D8",
       "icon": "images/icons/icon_boissons.svg",
       "title": {
         "fr": "Boissons",
@@ -708,7 +708,7 @@
       "page": 2,
       "column": 1,
       "rank": 4,
-      "color": "#1565C0",
+      "color": "#7E6B99",
       "icon": "images/icons/icon_boissons.svg",
       "title": {
         "fr": "Alcool",
@@ -778,7 +778,7 @@
       "page": 2,
       "column": 1,
       "rank": 1,
-      "color": "#C2185B",
+      "color": "#E8A0B8",
       "sectionImages": [
         {
           "src": "images/sections/tang_yuan.png"
@@ -829,7 +829,7 @@
       "page": 3,
       "column": 1,
       "rank": 1,
-      "color": "#2E7D32",
+      "color": "#A8C89A",
       "icon": "images/icons/icon_baozi.svg",
       "title": {
         "fr": "Formules baozi",
@@ -900,7 +900,7 @@
       "page": 3,
       "column": 1,
       "rank": 2,
-      "color": "#DB4637",
+      "color": "#F4A8A0",
       "icon": "images/icons/icon_wontons.svg",
       "title": {
         "fr": "Formules wontons + baozi",
@@ -959,7 +959,7 @@
       "page": 3,
       "column": 2,
       "rank": 1,
-      "color": "#00796B",
+      "color": "#7EBFB2",
       "icon": "images/icons/icon_nouilles.svg",
       "title": {
         "fr": "Formules nouilles + baozi",
