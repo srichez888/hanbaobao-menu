@@ -277,6 +277,7 @@
     line-height: 1.3;
     flex-shrink: 0;
     max-width: 75%;
+    text-transform: capitalize;
   }
 
   .item-dots {
@@ -332,10 +333,10 @@
 
   /* ── Spice note ── */
   .spice-note {
-    text-align: left;
+    text-align: center;
     margin-top: 5mm;
-    font-size: 9pt;
-    color: #2D1A0EA;
+    font-size: 8pt;
+    color: #D1A0EA;
     letter-spacing: 1pt;
     font-weight: 500;
   }
@@ -393,11 +394,6 @@
     </div>
   </div>
 
-  {{#if spiceNote}}
-  <div class="spice-note">
-    {{t spiceNote}}
-  </div>
-  {{/if}}
 </div>
 {{/each}}
 </script>
@@ -421,7 +417,7 @@
       {{#if chips}}
       <div class="card-subtitle-row">
         {{#each chips}}
-        <span class="chip" style="--chip-c:{{color}}">{{{t this}}}</span>
+        <span class="chip" style="--chip-c:{{color}}">{{t this}}</span>
         {{/each}}
       </div>
       {{/if}}
@@ -441,6 +437,9 @@
       </div>
       {{/each}}
     </div>
+    {{#if spiceNote}}
+    <div class="spice-note">{{t spiceNote}}</div>
+    {{/if}}
     {{#if sectionImages}}
       {{#each sectionImages}}
       <img class="card-photo"
@@ -471,6 +470,7 @@
     var byPage = {};
     Object.keys(menuData.sections).forEach(function(key) {
       var s = Object.assign({ id: key }, menuData.sections[key]);
+      if (s.isSpicy) s.spiceNote = menuData.spiceNote;
       var p = s.page || 1;
       if (!byPage[p]) byPage[p] = [];
       byPage[p].push(s);
@@ -484,8 +484,7 @@
       right.sort(function(a, b) { return (a.rank || 0) - (b.rank || 0); });
       return {
         leftSections: left,
-        rightSections: right,
-        spiceNote: i === 0 ? menuData.spiceNote : null
+        rightSections: right
       };
     });
     document.getElementById('menu-output').innerHTML = tpl({

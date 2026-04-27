@@ -5,9 +5,9 @@
     "en": "Hanbaobao"
   },
   "spiceNote": {
-    "fr": "(1) Niveau de piment au choix — Léger  /  Moyen  /  Fort",
-    "cn": "(1) 辣度可选（微辣、中辣、特辣）",
-    "en": "(1) Spice level of your choice — Mild  /  Medium  /  Hot"
+    "fr": "Niveau de piment au choix — Léger  /  Moyen  /  Fort",
+    "cn": "辣度可选（微辣、中辣、特辣）",
+    "en": "Spice level of your choice — Mild  /  Medium  /  Hot"
   },
   "tagline": {
     "fr": "Wontons — Nouilles — Riz",
@@ -51,9 +51,9 @@
           "color": null
         },
         {
-          "fr": "sauce piquante <sup>(1)</sup>",
-          "cn": "红油馄饨 <sup>(1)</sup>",
-          "en": "spicy sauce <sup>(1)</sup>",
+          "fr": "sauce piquante",
+          "cn": "红油馄饨",
+          "en": "spicy sauce",
           "color": "#DB4637"
         }
       ],
