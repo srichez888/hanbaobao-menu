@@ -5,9 +5,9 @@
     "en": "Hanbaobao"
   },
   "spiceNote": {
-    "fr": "Niveau de piment au choix — Léger  /  Moyen  /  Fort",
-    "cn": "辣度可选（微辣、中辣、特辣）",
-    "en": "Spice level of your choice — Mild  /  Medium  /  Hot"
+    "fr": "(1) Niveau de piment au choix — Léger  /  Moyen  /  Fort",
+    "cn": "(1) 辣度可选（微辣、中辣、特辣）",
+    "en": "(1) Spice level of your choice — Mild  /  Medium  /  Hot"
   },
   "tagline": {
     "fr": "Wontons — Nouilles — Riz",
@@ -19,7 +19,7 @@
       "page": 1,
       "column": 1,
       "rank": 1,
-      "color": "#DB4637",
+      "color": "#FCBC9C",
       "sectionImages": [{ "src": "images/sections/wonton.png" }, { "src": "images/sections/wonton_spicy.png" , "right": "10mm", "top": "-10mm"}],
       "icon": "images/icons/icon_wontons.svg",
       "title": {
@@ -30,12 +30,13 @@
       "chips": [
         { "fr": "en bouillon", "cn": "汤馄饨", "en": "in broth", "color": "#00796B" },
         { "fr": "ou", "cn": "或", "en": "or", "color": null },
-        { "fr": "sauce piquante", "cn": "红油馄饨", "en": "spicy sauce", "color": "#DB4637" }
+        { "fr": "sauce piquante <sup>(1)</sup>", "cn": "红油馄饨 <sup>(1)</sup>", "en": "spicy sauce <sup>(1)</sup>", "color": "#DB4637" }
       ],
       "items": [
         { "name": { "fr": "Wontons au porc", "cn": "猪肉馄饨", "en": "Pork wontons" }, "price": "13.80" },
         { "name": { "fr": "Wontons aux crevettes", "cn": "猪肉虾仁馄饨", "en": "Shrimp wontons" }, "price": "15.80" },
         { "name": { "fr": "Wontons à la coriandre", "cn": "猪肉香菜馄饨", "en": "Coriander wontons" }, "price": "14.80" },
+        { "name": { "fr": "Wontons végétariens", "cn": "素馄饨", "en": "Veggie wontons" }, "price": "13.80" },
         { "name": { "fr": "Wontons aux œuf de cent ans", "cn": "猪肉皮蛋馄饨", "en": "Century egg wontons" }, "price": "14.80" }
       ]
     },
@@ -43,7 +44,7 @@
       "page": 1,
       "column": 1,
       "rank": 2,
-      "color": "#00796B",
+      "color": "#BDC3AD",
       "icon": "images/icons/icon_nouilles.svg",
       "title": {
         "fr": "Nouilles",
@@ -65,7 +66,7 @@
       "page": 1,
       "column": 2,
       "rank": 2,
-      "color": "#7B1FA2",
+      "color": "#BA85A2",
       "icon": "images/icons/icon_vermicelles.svg",
       "title": {
         "fr": "Vermicelles",
@@ -119,9 +120,9 @@
         "en": "Baozi"
       },
       "items": [
-        { "name": { "fr": "Baozi vegetarien", "cn": "", "en": "" }, "price": "3.80" },
-        { "name": { "fr": "Baozi au porc", "cn": "", "en": "" }, "price": "4.00" },
-        { "name": { "fr": "Baozi au boeuf", "cn": "", "en": "" }, "price": "4.80" }
+        { "name": { "fr": "Baozi vegetarien", "cn": "subaozi", "en": "Vegitable Baozi" }, "price": "3.80" },
+        { "name": { "fr": "Baozi au porc", "cn": "猪肉包子", "en": "Pork Baozi" }, "price": "4.00" },
+        { "name": { "fr": "Baozi au boeuf", "cn": "牛肉包子", "en": "Beef Baozi" }, "price": "4.80" }
       ]
     },
     "smallDish": {
@@ -133,13 +134,13 @@
       "icon": "images/icons/icon_smalldish.svg",
       "title": {
         "fr": "Petit accompagnement",
-        "cn": "",
-        "en": ""
+        "cn": "小菜",
+        "en": "Side dish"
       },
       "items": [
-        { "name": { "fr": "Salade chinoise", "cn": "", "en": "" }, "price": "5.00" },
-        { "name": { "fr": "Oeuf de cent ans a l'huile pimentée", "cn": "", "en": "" }, "price": "9.80" },
-        { "name": { "fr": "Salade vinaigré", "cn": "", "en": "Pickles maison" }, "price": "3.50" }
+        { "name": { "fr": "Salade chinoise", "cn": "凉拌时蔬", "en": "Chinese salad" }, "price": "5.00" },
+        { "name": { "fr": "Oeuf de cent ans à l'huile pimentée", "cn": "红油皮蛋", "en": "Red hot sauce preserved eggs" }, "price": "7.80" },
+        { "name": { "fr": "Pickles maison", "cn": "自制泡菜", "en": "Pickles radish" }, "price": "3.50" }
       ]
     },
     "cafes": {
@@ -214,7 +215,7 @@
       },
       "items": [
         { "name": { "fr": "Coca / cola", "cn": "可乐", "en": "Coke / cola" }, "price": "4.00" },
-        { "name": { "fr": "Perrier", "cn": "Perrier", "en": "Perrier" }, "price": "4.00" },
+        { "name": { "fr": "Perrier", "cn": "气泡水", "en": "Perrier" }, "price": "4.00" },
         { "name": { "fr": "Orangina", "cn": "橘子汽水", "en": "Orangina" }, "price": "4.00" },
         { "name": { "fr": "Sprite", "cn": "雪碧", "en": "Sprite" }, "price": "4.00" },
         { "name": { "fr": "Jus (litchi, ananas, pomme, orange)", "cn": "果汁饮品（荔枝、菠萝、苹果、橘子）", "en": "Juice (lychee, pineapple, apple, orange)" }, "price": "4.50" },
@@ -224,6 +225,48 @@
         { "name": { "fr": "Evian (1 litre)", "cn": "依云水1升", "en": "Evian (1 litre)" }, "price": "6.00" },
         { "name": { "fr": "Perrier (1 litre)", "cn": "苏打水1升", "en": "Perrier (1 litre)" }, "price": "6.50" }
       ]
+    },
+    "alcool": {
+      "page": 2,
+      "column": 1,
+      "rank": 4,
+      "color": "#1565C0",
+      "icon": "images/icons/icon_boissons.svg",
+      "title": {
+        "fr": "Alcool",
+        "cn": "酒类",
+        "en": "Alchool"
+      },
+         "items": [
+    {
+      "name": { "fr": "Vin rouge / vin rosé (100 ml)", "cn": "红葡萄酒 / 粉红葡萄酒 (100毫升)", "en": "Red wine / rosé wine (100 ml)" },
+      "price": "5.00"
+    },
+    {
+      "name": { "fr": "Vin rouge / vin rosé (250 ml)", "cn": "红葡萄酒 / 粉红葡萄酒 (250毫升)", "en": "Red wine / rosé wine (250 ml)" },
+      "price": "9.80"
+    },
+    {
+      "name": { "fr": "Bière tsing tao", "cn": "青岛啤酒", "en": "Tsing tao beer" },
+      "price": "6.00"
+    },
+    {
+      "name": { "fr": "Bière asahi", "cn": "日本啤酒", "en": "Asahi beer" },
+      "price": "6.00"
+    },
+    {
+      "name": { "fr": "Bière 1664", "cn": "啤酒1664", "en": "1664 beer" },
+      "price": "5.00"
+    },
+    {
+      "name": { "fr": "Bière de yuzu", "cn": "柚子啤酒", "en": "Yuzu beer" },
+      "price": "7.50"
+    },
+    {
+      "name": { "fr": "Vin de prune / litchi / osmanthe (200 ml)", "cn": "梅子酒 / 荔枝酒 / 桂花酒 (200毫升)", "en": "Plum wine / lychee wine / osmanthus wine (200 ml)" },
+      "price": "9.80"
+    }
+  ]
     },
     "desserts": {
       "page": 2,

@@ -332,10 +332,10 @@
 
   /* ── Spice note ── */
   .spice-note {
-    text-align: center;
+    text-align: left;
     margin-top: 5mm;
-    font-size: 6pt;
-    color: #7B5A4A;
+    font-size: 9pt;
+    color: #2D1A0EA;
     letter-spacing: 1pt;
     font-weight: 500;
   }
@@ -396,7 +396,6 @@
   {{#if spiceNote}}
   <div class="spice-note">
     {{t spiceNote}}
-    <div class="spice-icons">🌶 &nbsp; 🌶🌶 &nbsp; 🌶🌶🌶</div>
   </div>
   {{/if}}
 </div>
@@ -422,7 +421,7 @@
       {{#if chips}}
       <div class="card-subtitle-row">
         {{#each chips}}
-        <span class="chip" style="--chip-c:{{color}}">{{t this}}</span>
+        <span class="chip" style="--chip-c:{{color}}">{{{t this}}}</span>
         {{/each}}
       </div>
       {{/if}}
