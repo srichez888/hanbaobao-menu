@@ -1,0 +1,16 @@
+{
+  "name": "hanbaobao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "browser-sync start --server --files \"*.html, *.json, *.css, *.js\" --port 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}
