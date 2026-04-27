@@ -20,7 +20,7 @@
       "column": 1,
       "rank": 1,
       "color": "#DB4637",
-      "sectionImages": ["Images/original/Wontons.png", "Images/original/Wontonsnospice.png"],
+      "sectionImages": ["images/sections/wonton.png", "images/sections/wonton_spicy.png"],
       "icon": "Images/sectionIcons/icon_wontons.png",
       "title": {
         "fr": "WONTONS",
@@ -44,7 +44,6 @@
       "column": 1,
       "rank": 2,
       "color": "#00796B",
-      "sectionImages": ["Images/original/Boeuf.png"],
       "icon": "Images/sectionIcons/icon_nouilles.png",
       "title": {
         "fr": "NOUILLES",
@@ -67,7 +66,6 @@
       "column": 2,
       "rank": 2,
       "color": "#7B1FA2",
-      "sectionImages": ["Images/original/Porc.png"],
       "icon": "Images/sectionIcons/icon_vermicelles.png",
       "title": {
         "fr": "VERMICELLES",
@@ -90,7 +88,7 @@
       "column": 2,
       "rank": 1,
       "color": "#7B5E40",
-      "sectionImages": ["Images/original/Idk.png"],
+      "sectionImages": ["images/sections/idk.png"],
       "icon": "Images/sectionIcons/icon_riz.png",
       "title": {
         "fr": "RIZ GARNIS",
@@ -113,6 +111,7 @@
       "column": 1,
       "rank": 3,
       "color": "#2E7D32",
+      "sectionImages": ["images/sections/baozi.png"],
       "icon": "Images/sectionIcons/icon_baozi.png",
       "title": {
         "fr": "BAOZI",
@@ -130,6 +129,7 @@
       "column": 2,
       "rank": 4,
       "color": "#2E7D32",
+      "sectionImages": ["images/sections/wd.png"],
       "icon": "Images/sectionIcons/icon_baozi.png",
       "title": {
         "fr": "Petit accompagnement",
