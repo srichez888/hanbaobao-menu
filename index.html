@@ -285,7 +285,7 @@
     min-width: 3mm;
     border-bottom: 1.5px dotted #BBA99A;
     margin-bottom: 2px;
-    align-self: flex-end;
+    align-self: baseline;
   }
 
   .item-price {
@@ -294,7 +294,7 @@
     color: #2D1A0E;
     white-space: nowrap;
     flex-shrink: 0;
-    align-self: flex-end;
+    align-self: baseline;
   }
 
   .item-desc {
@@ -435,6 +435,7 @@
           <div class="item-dots"></div>
           <div class="item-price">{{price}}&nbsp;€</div>
         </div>
+        
         {{#if description}}<div class="item-desc">{{t description}}</div>{{/if}}
       </div>
       {{/each}}
