@@ -92,7 +92,7 @@
         },
         {
           "name": {
-            "fr": "Wontons aux œuf de cent ans",
+            "fr": "Wontons aux œufs de cent ans",
             "cn": "猪肉皮蛋馄饨",
             "en": "Century egg wontons"
           },
@@ -189,22 +189,22 @@
       "title": {
         "fr": "Vermicelles",
         "cn": "米粉",
-        "en": "Glass noodles"
+        "en": "Rice Vermicelli"
       },
       "items": [
         {
           "name": {
             "fr": "Vermicelles à la sauce aux cacahuètes",
             "cn": "花生酱拌粉",
-            "en": "Peanut sauce glass noodles"
+            "en": "Peanut Sauce Rice Vermicelli"
           },
           "price": "12.80"
         },
         {
           "name": {
-            "fr": "Vermicelles arrosées d'huile pimentée",
+            "fr": "Vermicelles arrosés d'huile pimentée",
             "cn": "油泼米粉",
-            "en": "Chili oil glass noodles"
+            "en": "Chili oil Rice Vermicelli"
           },
           "price": "12.80"
         },
@@ -212,7 +212,7 @@
           "name": {
             "fr": "Vermicelles aux légumes",
             "cn": "蔬菜拌粉",
-            "en": "Vegetable glass noodles"
+            "en": "Vegetable Rice Vermicelli"
           },
           "price": "13.80"
         },
@@ -220,7 +220,7 @@
           "name": {
             "fr": "Vermicelles au porc haché et légumes frais",
             "cn": "肉臊杂酱拌粉",
-            "en": "Minced pork & vegetable glass noodles"
+            "en": "Minced pork & Vegetable Rice Vermicelli"
           },
           "price": "14.80"
         },
@@ -228,7 +228,7 @@
           "name": {
             "fr": "Vermicelles au bœuf et légumes frais",
             "cn": "牛肉蔬菜拌粉",
-            "en": "Beef & vegetable glass noodles"
+            "en": "Beef & Vegetable Rice Vermicelli"
           },
           "price": "16.80"
         },
@@ -236,7 +236,7 @@
           "name": {
             "fr": "Vermicelles au porc, chou fermenté et bambou en bouillon",
             "cn": "雪菜笋尖肉丝汤粉",
-            "en": "Pickled cabbage & bamboo glass noodle soup"
+            "en": "Pickled cabbage & Bamboo Rice Vermicelli Soup"
           },
           "price": "16.80"
         },
@@ -244,7 +244,7 @@
           "name": {
             "fr": "Vermicelles au porc haché en bouillon",
             "cn": "肉臊杂酱汤粉",
-            "en": "Minced pork glass noodle soup"
+            "en": "Minced pork Rice Vermicelli Soup"
           },
           "price": "14.80"
         },
@@ -252,7 +252,7 @@
           "name": {
             "fr": "Vermicelles au bœuf en bouillon",
             "cn": "牛肉汤粉",
-            "en": "Beef glass noodle soup"
+            "en": "Beef Rice Vermicelli Soup"
           },
           "price": "17.80"
         }
@@ -360,9 +360,9 @@
       "items": [
         {
           "name": {
-            "fr": "Baozi vegetarien",
-            "cn": "subaozi",
-            "en": "Vegitable Baozi"
+            "fr": "Baozi végétarien",
+            "cn": "素包子",
+            "en": "Vegetable Baozi"
           },
           "price": "3.80"
         },
@@ -411,9 +411,9 @@
         },
         {
           "name": {
-            "fr": "Oeuf de cent ans à l'huile pimentée",
+            "fr": "Oeufs de cent ans à l'huile pimentée",
             "cn": "红油皮蛋",
-            "en": "Red hot sauce preserved eggs"
+            "en": "Century eggs in chili oil"
           },
           "price": "7.80"
         },
@@ -421,7 +421,7 @@
           "name": {
             "fr": "Pickles maison",
             "cn": "自制泡菜",
-            "en": "Pickles radish"
+            "en": "Homemade pickles"
           },
           "price": "3.50"
         }
@@ -595,7 +595,7 @@
           },
           "price": "5.00",
           "description": {
-            "fr": "",
+            "fr": "Le lait de soja est servi froid par défaut. Si vous le préférez chaud, veuillez indiquer la température souhaitée au comptoir.",
             "cn": "豆浆默认冰豆浆，需要热豆浆可以和前台选热度",
             "en": "Soy milk is served as ice soy milk by default. If you prefer hot soy milk, you can choose the desired temperature at the front desk."
           }
@@ -713,7 +713,7 @@
       "title": {
         "fr": "Alcool",
         "cn": "酒类",
-        "en": "Alchool"
+        "en": "Alcohol"
       },
       "items": [
         {
@@ -837,14 +837,14 @@
         "en": "Baozi combos"
       },
       "subtitle": {
-        "fr": "Boisson au choix : soja · coca · perrier · orangina · sprite · sirop",
+        "fr": "Boisson au choix : lait de soja · coca · perrier · orangina · sprite · sirop",
         "cn": "指定饮品：豆浆、可乐、汽水、橘子、雪碧、糖浆水",
-        "en": "Drink of your choice : soja · coke · perrier · orangina · sprite · syrup"
+        "en": "Drink of your choice : soy milk · coke · perrier · orangina · sprite · syrup"
       },
       "items": [
         {
           "name": {
-            "fr": "Baozi au végétarien x 2",
+            "fr": "Baozi végétarien x 2",
             "cn": "素菜包子 x2",
             "en": "Vegetarian baozi x 2"
           },
