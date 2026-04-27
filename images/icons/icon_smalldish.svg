@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#558B2F"/>
+  <g transform="translate(50,52)">
+    <!-- Small plate -->
+    <ellipse cx="0" cy="6" rx="24" ry="8" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <ellipse cx="0" cy="6" rx="16" ry="5" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+    <!-- Salad leaves -->
+    <path d="M-10,2 Q-8,-4 -2,-2 Q2,-6 6,-2 Q10,0 8,4 Q4,6 -2,4 Z" fill="none" stroke="#fff" stroke-width="2"/>
+    <!-- Small items -->
+    <circle cx="-4" cy="0" r="2" fill="#fff" opacity="0.6"/>
+    <circle cx="4" cy="2" r="1.5" fill="#fff" opacity="0.6"/>
+  </g>
+</svg>

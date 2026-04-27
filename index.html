@@ -210,7 +210,7 @@
     object-fit: cover;
     border: 1.5px solid var(--c, #8D6E63);
     background: #fff;
-    padding: 0.8mm;
+    /* padding: 0.8mm; */
     flex-shrink: 0;
   }
 
@@ -253,7 +253,7 @@
   }
 
   .item-name {
-    font-size: 7pt;
+    font-size: 9pt;
     font-weight: 600;
     color: #2D1A0E;
     text-transform: uppercase;
@@ -287,30 +287,44 @@
   }
 
   /* ── Card photos ── */
+  .menu-card {
+    position: relative;
+    overflow: visible;
+    z-index: 0;
+  }
+
   .card-content {
-    display: flex;
-    gap: 3mm;
-    align-items: flex-start;
+    display: block;
   }
 
   .card-items {
-    flex: 1;
-    min-width: 0;
+    width: 100%;
+  }
+
+  .card-items.has-photos {
+  }
+
+  .card-items.has-2-photos {
+    padding-top: 22mm;
   }
 
   .card-photos {
+    position: absolute;
+    top: -6mm;
+    right: -4mm;
     display: flex;
     flex-direction: column;
     gap: 2mm;
-    flex-shrink: 0;
-    width: 24mm;
+    z-index: 1;
   }
 
   .card-photo {
-    width: 24mm;
-    height: 24mm;
+    width: 22mm;
+    height: 22mm;
     border-radius: 50%;
     object-fit: cover;
+    border: none;
+    box-shadow: none;
     /* border: 1.5px solid var(--c, #8D6E63); */
   }
 
@@ -397,7 +411,7 @@
     </div>
   </div>
   <div class="card-content">
-    <div class="card-items">
+    <div class="card-items{{#if sectionImages}} has-photos{{/if}}{{#if hasTwoPhotos}} has-2-photos{{/if}}">
       {{#each items}}
       <div class="item-group">
         <div class="item-row">
@@ -438,6 +452,7 @@
     var byPage = {};
     Object.keys(menuData.sections).forEach(function(key) {
       var s = Object.assign({ id: key }, menuData.sections[key]);
+      if (s.sectionImages && s.sectionImages.length >= 2) s.hasTwoPhotos = true;
       var p = s.page || 1;
       if (!byPage[p]) byPage[p] = [];
       byPage[p].push(s);

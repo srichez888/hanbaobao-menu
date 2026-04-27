@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#C2185B"/>
+  <g transform="translate(50,50)">
+    <!-- Dessert bowl -->
+    <ellipse cx="0" cy="6" rx="24" ry="8" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <path d="M-24,6 Q-24,20 0,20 Q24,20 24,6" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <!-- Bowl stem -->
+    <line x1="0" y1="20" x2="0" y2="26" stroke="#fff" stroke-width="2"/>
+    <ellipse cx="0" cy="28" rx="12" ry="3" fill="none" stroke="#fff" stroke-width="2"/>
+    <!-- Dessert contents (balls) -->
+    <circle cx="-8" cy="0" r="5" fill="none" stroke="#fff" stroke-width="1.8"/>
+    <circle cx="6" cy="-2" r="5" fill="none" stroke="#fff" stroke-width="1.8"/>
+    <circle cx="-1" cy="-6" r="5" fill="none" stroke="#fff" stroke-width="1.8"/>
+    <!-- Cherry on top -->
+    <circle cx="-1" cy="-12" r="2.5" fill="#fff"/>
+    <path d="M-1,-14 Q2,-20 4,-18" fill="none" stroke="#fff" stroke-width="1.5"/>
+  </g>
+</svg>

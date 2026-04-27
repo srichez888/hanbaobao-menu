@@ -1,8 +1,8 @@
 {
   "restaurant": {
-    "fr": "HANBAOBAO",
+    "fr": "Hanbaobao",
     "cn": "汉包包",
-    "en": "HANBAOBAO"
+    "en": "Hanbaobao"
   },
   "spiceNote": {
     "fr": "Niveau de piment au choix — Léger  /  Moyen  /  Fort",
@@ -21,22 +21,22 @@
       "rank": 1,
       "color": "#DB4637",
       "sectionImages": ["images/sections/wonton.png", "images/sections/wonton_spicy.png"],
-      "icon": "Images/sectionIcons/icon_wontons.png",
+      "icon": "images/icons/icon_wontons.svg",
       "title": {
-        "fr": "WONTONS",
+        "fr": "Wontons",
         "cn": "馄饨",
-        "en": "WONTONS"
+        "en": "Wontons"
       },
       "subtitle": {
-        "fr": "AUX CHOIX : EN BOUILLON OU SAUCE PIQUANTE",
+        "fr": "Aux choix : en bouillon ou sauce piquante",
         "cn": "可选：汤馄饨 或 红油馄饨",
-        "en": "CHOICE OF : IN BROTH OR SPICY SAUCE"
+        "en": "Choice of : in broth or spicy sauce"
       },
       "items": [
-        { "name": { "fr": "WONTONS AU PORC", "cn": "猪肉馄饨", "en": "PORK WONTONS" }, "price": "13.80" },
-        { "name": { "fr": "WONTONS AUX CREVETTES", "cn": "猪肉虾仁馄饨", "en": "SHRIMP WONTONS" }, "price": "15.80" },
-        { "name": { "fr": "WONTONS À LA CORIANDRE", "cn": "猪肉香菜馄饨", "en": "CORIANDER WONTONS" }, "price": "14.80" },
-        { "name": { "fr": "WONTONS AUX ŒUF DE CENT ANS", "cn": "猪肉皮蛋馄饨", "en": "CENTURY EGG WONTONS" }, "price": "14.80" }
+        { "name": { "fr": "Wontons au porc", "cn": "猪肉馄饨", "en": "Pork wontons" }, "price": "13.80" },
+        { "name": { "fr": "Wontons aux crevettes", "cn": "猪肉虾仁馄饨", "en": "Shrimp wontons" }, "price": "15.80" },
+        { "name": { "fr": "Wontons à la coriandre", "cn": "猪肉香菜馄饨", "en": "Coriander wontons" }, "price": "14.80" },
+        { "name": { "fr": "Wontons aux œuf de cent ans", "cn": "猪肉皮蛋馄饨", "en": "Century egg wontons" }, "price": "14.80" }
       ]
     },
     "nouilles": {
@@ -44,21 +44,21 @@
       "column": 1,
       "rank": 2,
       "color": "#00796B",
-      "icon": "Images/sectionIcons/icon_nouilles.png",
+      "icon": "images/icons/icon_nouilles.svg",
       "title": {
-        "fr": "NOUILLES",
+        "fr": "Nouilles",
         "cn": "面类",
-        "en": "NOODLES"
+        "en": "Noodles"
       },
       "items": [
-        { "name": { "fr": "NOUILLES À LA SAUCE AUX CACAHUÈTES", "cn": "花生酱拌面", "en": "PEANUT SAUCE NOODLES" }, "price": "12.80" },
-        { "name": { "fr": "NOUILLES ARROSÉES D'HUILE PIMENTÉE", "cn": "油泼面", "en": "CHILI OIL NOODLES" }, "price": "12.80" },
-        { "name": { "fr": "NOUILLES AUX LÉGUMES", "cn": "蔬菜拌面", "en": "VEGETABLE NOODLES" }, "price": "13.80" },
-        { "name": { "fr": "NOUILLES AU PORC HACHÉ ET LÉGUMES FRAIS", "cn": "肉臊杂酱拌面", "en": "MINCED PORK & VEGETABLE NOODLES" }, "price": "16.80" },
-        { "name": { "fr": "NOUILLES AU BŒUF ET LÉGUMES FRAIS", "cn": "牛肉蔬菜拌面", "en": "BEEF & VEGETABLE NOODLES" }, "price": "15.80" },
-        { "name": { "fr": "NOUILLES AU PORC, CHOU FERMENTÉ ET BAMBOU EN BOUILLON", "cn": "雪菜笋尖肉丝汤面", "en": "PICKLED CABBAGE & BAMBOO NOODLE SOUP" }, "price": "16.80" },
-        { "name": { "fr": "NOUILLES AU PORC HACHÉ EN BOUILLON", "cn": "肉臊杂酱汤面", "en": "MINCED PORK NOODLE SOUP" }, "price": "15.80" },
-        { "name": { "fr": "NOUILLES AU BŒUF EN BOUILLON", "cn": "牛肉汤面", "en": "BEEF NOODLE SOUP" }, "price": "17.80" }
+        { "name": { "fr": "Nouilles à la sauce aux cacahuètes", "cn": "花生酱拌面", "en": "Peanut sauce noodles" }, "price": "12.80" },
+        { "name": { "fr": "Nouilles arrosées d'huile pimentée", "cn": "油泼面", "en": "Chili oil noodles" }, "price": "12.80" },
+        { "name": { "fr": "Nouilles aux légumes", "cn": "蔬菜拌面", "en": "Vegetable noodles" }, "price": "13.80" },
+        { "name": { "fr": "Nouilles au porc haché et légumes frais", "cn": "肉臊杂酱拌面", "en": "Minced pork & vegetable noodles" }, "price": "16.80" },
+        { "name": { "fr": "Nouilles au bœuf et légumes frais", "cn": "牛肉蔬菜拌面", "en": "Beef & vegetable noodles" }, "price": "15.80" },
+        { "name": { "fr": "Nouilles au porc, chou fermenté et bambou en bouillon", "cn": "雪菜笋尖肉丝汤面", "en": "Pickled cabbage & bamboo noodle soup" }, "price": "16.80" },
+        { "name": { "fr": "Nouilles au porc haché en bouillon", "cn": "肉臊杂酱汤面", "en": "Minced pork noodle soup" }, "price": "15.80" },
+        { "name": { "fr": "Nouilles au bœuf en bouillon", "cn": "牛肉汤面", "en": "Beef noodle soup" }, "price": "17.80" }
       ]
     },
     "vermicelles": {
@@ -66,21 +66,21 @@
       "column": 2,
       "rank": 2,
       "color": "#7B1FA2",
-      "icon": "Images/sectionIcons/icon_vermicelles.png",
+      "icon": "images/icons/icon_vermicelles.svg",
       "title": {
-        "fr": "VERMICELLES",
+        "fr": "Vermicelles",
         "cn": "米粉",
-        "en": "GLASS NOODLES"
+        "en": "Glass noodles"
       },
       "items": [
-        { "name": { "fr": "VERMICELLES À LA SAUCE AUX CACAHUÈTES", "cn": "花生酱拌粉", "en": "PEANUT SAUCE GLASS NOODLES" }, "price": "12.80" },
-        { "name": { "fr": "VERMICELLES ARROSÉES D'HUILE PIMENTÉE", "cn": "油泼米粉", "en": "CHILI OIL GLASS NOODLES" }, "price": "12.80" },
-        { "name": { "fr": "VERMICELLES AUX LÉGUMES", "cn": "蔬菜拌粉", "en": "VEGETABLE GLASS NOODLES" }, "price": "13.80" },
-        { "name": { "fr": "VERMICELLES AU PORC HACHÉ ET LÉGUMES FRAIS", "cn": "肉臊杂酱拌粉", "en": "MINCED PORK & VEGETABLE GLASS NOODLES" }, "price": "14.80" },
-        { "name": { "fr": "VERMICELLES AU BŒUF ET LÉGUMES FRAIS", "cn": "牛肉蔬菜拌粉", "en": "BEEF & VEGETABLE GLASS NOODLES" }, "price": "16.80" },
-        { "name": { "fr": "VERMICELLES AU PORC, CHOU FERMENTÉ ET BAMBOU EN BOUILLON", "cn": "雪菜笋尖肉丝汤粉", "en": "PICKLED CABBAGE & BAMBOO GLASS NOODLE SOUP" }, "price": "16.80" },
-        { "name": { "fr": "VERMICELLES AU PORC HACHÉ EN BOUILLON", "cn": "肉臊杂酱汤粉", "en": "MINCED PORK GLASS NOODLE SOUP" }, "price": "15.80" },
-        { "name": { "fr": "VERMICELLES AU BŒUF EN BOUILLON", "cn": "牛肉汤粉", "en": "BEEF GLASS NOODLE SOUP" }, "price": "17.80" }
+        { "name": { "fr": "Vermicelles à la sauce aux cacahuètes", "cn": "花生酱拌粉", "en": "Peanut sauce glass noodles" }, "price": "12.80" },
+        { "name": { "fr": "Vermicelles arrosées d'huile pimentée", "cn": "油泼米粉", "en": "Chili oil glass noodles" }, "price": "12.80" },
+        { "name": { "fr": "Vermicelles aux légumes", "cn": "蔬菜拌粉", "en": "Vegetable glass noodles" }, "price": "13.80" },
+        { "name": { "fr": "Vermicelles au porc haché et légumes frais", "cn": "肉臊杂酱拌粉", "en": "Minced pork & vegetable glass noodles" }, "price": "14.80" },
+        { "name": { "fr": "Vermicelles au bœuf et légumes frais", "cn": "牛肉蔬菜拌粉", "en": "Beef & vegetable glass noodles" }, "price": "16.80" },
+        { "name": { "fr": "Vermicelles au porc, chou fermenté et bambou en bouillon", "cn": "雪菜笋尖肉丝汤粉", "en": "Pickled cabbage & bamboo glass noodle soup" }, "price": "16.80" },
+        { "name": { "fr": "Vermicelles au porc haché en bouillon", "cn": "肉臊杂酱汤粉", "en": "Minced pork glass noodle soup" }, "price": "15.80" },
+        { "name": { "fr": "Vermicelles au bœuf en bouillon", "cn": "牛肉汤粉", "en": "Beef glass noodle soup" }, "price": "17.80" }
       ]
     },
     "riz": {
@@ -89,21 +89,21 @@
       "rank": 1,
       "color": "#7B5E40",
       "sectionImages": ["images/sections/idk.png"],
-      "icon": "Images/sectionIcons/icon_riz.png",
+      "icon": "images/icons/icon_riz.svg",
       "title": {
-        "fr": "RIZ GARNIS",
+        "fr": "Riz garnis",
         "cn": "米饭",
-        "en": "RICE BOWLS"
+        "en": "Rice bowls"
       },
       "items": [
-        { "name": { "fr": "RIZ GARNI AU PORC ET CHOUX PARFUMÉ", "cn": "梅干菜肉饭", "en": "PORK & PICKLED CABBAGE RICE" }, "price": "15.80" },
-        { "name": { "fr": "RIZ GARNI AU BŒUF BRAISÉ FROID", "cn": "酱牛肉饭", "en": "BRAISED BEEF RICE" }, "price": "17.00" },
-        { "name": { "fr": "RIZ AU TOFU ÉPICÉ (MAPO)", "cn": "麻婆豆腐饭", "en": "MAPO TOFU RICE" }, "price": "16.80" },
-        { "name": { "fr": "RIZ GARNI AU PORC HACHÉ", "cn": "肉臊盖饭", "en": "MINCED PORK RICE" }, "price": "15.80" },
-        { "name": { "fr": "RIZ GARNI DUO PORC ET BŒUF", "cn": "双拼饭（梅菜，酱牛肉）", "en": "PORK & BEEF COMBO RICE" }, "price": "18.00" },
-        { "name": { "fr": "RIZ GARNI DUO PORC CHOUX PARFUMÉ ET PORC HACHÉ", "cn": "双拼饭（梅菜，肉臊）", "en": "PICKLED CABBAGE & MINCED PORK COMBO RICE" }, "price": "17.00" },
-        { "name": { "fr": "RIZ GARNI VÉGÉTARIEN", "cn": "蔬菜盖饭", "en": "VEGETARIAN RICE" }, "price": "13.80" },
-        { "name": { "fr": "RIZ BLANC", "cn": "白米饭", "en": "STEAMED RICE" }, "price": "3.00" }
+        { "name": { "fr": "Riz garni au porc et choux parfumé", "cn": "梅干菜肉饭", "en": "Pork & pickled cabbage rice" }, "price": "15.80" },
+        { "name": { "fr": "Riz garni au bœuf braisé froid", "cn": "酱牛肉饭", "en": "Braised beef rice" }, "price": "17.00" },
+        { "name": { "fr": "Riz au tofu épicé (mapo)", "cn": "麻婆豆腐饭", "en": "Mapo tofu rice" }, "price": "16.80" },
+        { "name": { "fr": "Riz garni au porc haché", "cn": "肉臊盖饭", "en": "Minced pork rice" }, "price": "15.80" },
+        { "name": { "fr": "Riz garni duo porc et bœuf", "cn": "双拼饭（梅菜，酱牛肉）", "en": "Pork & beef combo rice" }, "price": "18.00" },
+        { "name": { "fr": "Riz garni duo porc choux parfumé et porc haché", "cn": "双拼饭（梅菜，肉臊）", "en": "Pickled cabbage & minced pork combo rice" }, "price": "17.00" },
+        { "name": { "fr": "Riz garni végétarien", "cn": "蔬菜盖饭", "en": "Vegetarian rice" }, "price": "13.80" },
+        { "name": { "fr": "Riz blanc", "cn": "白米饭", "en": "Steamed rice" }, "price": "3.00" }
       ]
     },
     "baozi": {
@@ -112,16 +112,16 @@
       "rank": 3,
       "color": "#2E7D32",
       "sectionImages": ["images/sections/baozi.png"],
-      "icon": "Images/sectionIcons/icon_baozi.png",
+      "icon": "images/icons/icon_baozi.svg",
       "title": {
-        "fr": "BAOZI",
+        "fr": "Baozi",
         "cn": "包子",
-        "en": "BAOZI"
+        "en": "Baozi"
       },
       "items": [
-        { "name": { "fr": "BAOZI VEGETARIEN", "cn": "", "en": "" }, "price": "3.80" },
-        { "name": { "fr": "BAOZI AU PORC", "cn": "", "en": "" }, "price": "4.00" },
-        { "name": { "fr": "BAOZI AU BOEUF", "cn": "", "en": "" }, "price": "4.80" }
+        { "name": { "fr": "Baozi vegetarien", "cn": "", "en": "" }, "price": "3.80" },
+        { "name": { "fr": "Baozi au porc", "cn": "", "en": "" }, "price": "4.00" },
+        { "name": { "fr": "Baozi au boeuf", "cn": "", "en": "" }, "price": "4.80" }
       ]
     },
     "smallDish": {
@@ -130,14 +130,14 @@
       "rank": 4,
       "color": "#2E7D32",
       "sectionImages": ["images/sections/wd.png"],
-      "icon": "Images/sectionIcons/icon_baozi.png",
+      "icon": "images/icons/icon_smalldish.svg",
       "title": {
         "fr": "Petit accompagnement",
         "cn": "",
         "en": ""
       },
       "items": [
-        { "name": { "fr": "Salade Chinoise", "cn": "", "en": "" }, "price": "5.00" },
+        { "name": { "fr": "Salade chinoise", "cn": "", "en": "" }, "price": "5.00" },
         { "name": { "fr": "Oeuf de cent ans a l'huile pimentée", "cn": "", "en": "" }, "price": "9.80" },
         { "name": { "fr": "Salade vinaigré", "cn": "", "en": "Pickles maison" }, "price": "3.50" }
       ]
@@ -147,18 +147,18 @@
       "column": 1,
       "rank": 2,
       "color": "#4E342E",
-      "icon": "Images/sectionIcons/icon_boissons.png",
+      "icon": "images/icons/icon_cafes.svg",
       "title": {
-        "fr": "CAFÉS",
+        "fr": "Cafés",
         "cn": "咖啡",
-        "en": "COFFEES"
+        "en": "Coffees"
       },
       "items": [
-        { "name": { "fr": "EXPRESSO", "cn": "意式浓缩", "en": "ESPRESSO" }, "price": "2.00" },
-        { "name": { "fr": "NOISETTE", "cn": "小奶咖", "en": "NOISETTE" }, "price": "2.50" },
-        { "name": { "fr": "AMÉRICAIN", "cn": "美式咖啡", "en": "AMERICANO" }, "price": "4.00" },
-        { "name": { "fr": "CAFÉ AU LAIT", "cn": "咖啡牛奶", "en": "CAFÉ AU LAIT" }, "price": "4.50" },
-        { "name": { "fr": "CAFÉ GLACÉ", "cn": "冰咖啡", "en": "ICED COFFEE" }, "price": "5.00" }
+        { "name": { "fr": "Expresso", "cn": "意式浓缩", "en": "Espresso" }, "price": "2.00" },
+        { "name": { "fr": "Noisette", "cn": "小奶咖", "en": "Noisette" }, "price": "2.50" },
+        { "name": { "fr": "Américain", "cn": "美式咖啡", "en": "Americano" }, "price": "4.00" },
+        { "name": { "fr": "Café au lait", "cn": "咖啡牛奶", "en": "Café au lait" }, "price": "4.50" },
+        { "name": { "fr": "Café glacé", "cn": "冰咖啡", "en": "Iced coffee" }, "price": "5.00" }
       ]
     },
     "thes-infusions": {
@@ -166,15 +166,15 @@
       "column": 1,
       "rank": 3,
       "color": "#558B2F",
-      "icon": "Images/sectionIcons/icon_boissons.png",
+      "icon": "images/icons/icon_thes.svg",
       "title": {
-        "fr": "THÉS & INFUSIONS",
+        "fr": "Thés & infusions",
         "cn": "茶品",
-        "en": "TEAS & INFUSIONS"
+        "en": "Teas & infusions"
       },
       "items": [
-        { "name": { "fr": "THÉ NOIR / VERT / OOLONG / SARRASIN", "cn": "红茶、绿茶、乌龙茶、荞麦茶", "en": "BLACK / GREEN / OOLONG / BUCKWHEAT TEA" }, "price": "5.80" },
-        { "name": { "fr": "INFUSIONS (ROSE, JASMIN, CHRYSANTHÈME, OSMANTHE)", "cn": "花草茶（玫瑰、茉莉、菊花、桂花）", "en": "HERBAL TEA (ROSE, JASMINE, CHRYSANTHEMUM, OSMANTHUS)" }, "price": "5.80" }
+        { "name": { "fr": "Thé noir / vert / oolong / sarrasin", "cn": "红茶、绿茶、乌龙茶、荞麦茶", "en": "Black / green / oolong / buckwheat tea" }, "price": "5.80" },
+        { "name": { "fr": "Infusions (rose, jasmin, chrysanthème, osmanthe)", "cn": "花草茶（玫瑰、茉莉、菊花、桂花）", "en": "Herbal tea (rose, jasmine, chrysanthemum, osmanthus)" }, "price": "5.80" }
       ]
     },
     "specialites": {
@@ -182,23 +182,23 @@
       "column": 2,
       "rank": 3,
       "color": "#F57F17",
-      "icon": "Images/sectionIcons/icon_boissons.png",
+      "icon": "images/icons/icon_specialites.svg",
       "title": {
-        "fr": "SPÉCIALITÉS",
+        "fr": "Spécialités",
         "cn": "手作饮品",
-        "en": "HOUSE DRINKS"
+        "en": "House drinks"
       },
       "items": [
-        { "name": { "fr": "INFUSION AU CITRON ET GINGEMBRE", "cn": "柠檬姜汁饮", "en": "LEMON GINGER INFUSION" }, "price": "7.20" },
-        { "name": { "fr": "SODA AU CITRON ET GINGEMBRE", "cn": "柠檬姜汁气泡饮", "en": "LEMON GINGER SODA" }, "price": "7.50" },
-        { "name": { "fr": "INFUSION AU CITRON ET MIEL", "cn": "蜂蜜柠檬饮", "en": "HONEY LEMON INFUSION" }, "price": "6.00" },
-        { "name": { "fr": "SODA AU CITRON ET MIEL", "cn": "蜂蜜柠檬苏打", "en": "HONEY LEMON SODA" }, "price": "7.00" },
-        { "name": { "fr": "INFUSION AU YUZU ET MIEL", "cn": "蜂蜜柚子饮", "en": "HONEY YUZU INFUSION" }, "price": "6.00" },
-        { "name": { "fr": "SODA AU YUZU ET MIEL", "cn": "蜂蜜柚子气泡饮", "en": "HONEY YUZU SODA" }, "price": "7.00" },
-        { "name": { "fr": "INFUSION AU GINGEMBRE", "cn": "红糖姜饮", "en": "BROWN SUGAR GINGER INFUSION" }, "price": "6.50" },
-        { "name": { "fr": "SODA AU GINGEMBRE", "cn": "红糖姜气泡饮", "en": "BROWN SUGAR GINGER SODA" }, "price": "7.20" },
-        { "name": { "fr": "LAIT DE SOJA", "cn": "豆浆", "en": "SOY MILK" }, "price": "5.00" },
-        { "name": { "fr": "SIROP (CITRON, PÊCHE, FRAISE, VANILLE, MELON)", "cn": "糖浆水（柠檬/桃子/草莓/香草/甜瓜）", "en": "SYRUP (LEMON, PEACH, STRAWBERRY, VANILLA, MELON)" }, "price": "3.50" }
+        { "name": { "fr": "Infusion au citron et gingembre", "cn": "柠檬姜汁饮", "en": "Lemon ginger infusion" }, "price": "7.20" },
+        { "name": { "fr": "Soda au citron et gingembre", "cn": "柠檬姜汁气泡饮", "en": "Lemon ginger soda" }, "price": "7.50" },
+        { "name": { "fr": "Infusion au citron et miel", "cn": "蜂蜜柠檬饮", "en": "Honey lemon infusion" }, "price": "6.00" },
+        { "name": { "fr": "Soda au citron et miel", "cn": "蜂蜜柠檬苏打", "en": "Honey lemon soda" }, "price": "7.00" },
+        { "name": { "fr": "Infusion au yuzu et miel", "cn": "蜂蜜柚子饮", "en": "Honey yuzu infusion" }, "price": "6.00" },
+        { "name": { "fr": "Soda au yuzu et miel", "cn": "蜂蜜柚子气泡饮", "en": "Honey yuzu soda" }, "price": "7.00" },
+        { "name": { "fr": "Infusion au gingembre", "cn": "红糖姜饮", "en": "Brown sugar ginger infusion" }, "price": "6.50" },
+        { "name": { "fr": "Soda au gingembre", "cn": "红糖姜气泡饮", "en": "Brown sugar ginger soda" }, "price": "7.20" },
+        { "name": { "fr": "Lait de soja", "cn": "豆浆", "en": "Soy milk" }, "price": "5.00" },
+        { "name": { "fr": "Sirop (citron, pêche, fraise, vanille, melon)", "cn": "糖浆水（柠檬/桃子/草莓/香草/甜瓜）", "en": "Syrup (lemon, peach, strawberry, vanilla, melon)" }, "price": "3.50" }
       ]
     },
     "boissons": {
@@ -206,23 +206,23 @@
       "column": 2,
       "rank": 4,
       "color": "#1565C0",
-      "icon": "Images/sectionIcons/icon_boissons.png",
+      "icon": "images/icons/icon_boissons.svg",
       "title": {
-        "fr": "BOISSONS",
+        "fr": "Boissons",
         "cn": "饮料",
-        "en": "DRINKS"
+        "en": "Drinks"
       },
       "items": [
-        { "name": { "fr": "COCA / COLA", "cn": "可乐", "en": "COKE / COLA" }, "price": "4.00" },
-        { "name": { "fr": "PERRIER", "cn": "Perrier", "en": "PERRIER" }, "price": "4.00" },
-        { "name": { "fr": "ORANGINA", "cn": "橘子汽水", "en": "ORANGINA" }, "price": "4.00" },
-        { "name": { "fr": "SPRITE", "cn": "雪碧", "en": "SPRITE" }, "price": "4.00" },
-        { "name": { "fr": "JUS (LITCHI, ANANAS, POMME, ORANGE)", "cn": "果汁饮品（荔枝、菠萝、苹果、橘子）", "en": "JUICE (LYCHEE, PINEAPPLE, APPLE, ORANGE)" }, "price": "4.50" },
-        { "name": { "fr": "EAU DE COCO / LAIT DE COCO", "cn": "椰子水/椰子奶", "en": "COCONUT WATER / COCONUT MILK" }, "price": "5.00" },
-        { "name": { "fr": "ICED TEA", "cn": "冰红茶", "en": "ICED TEA" }, "price": "4.50" },
-        { "name": { "fr": "BOISSONS CHINOISES (JIANLIBAO, WANG LAOJI…)", "cn": "中国饮料（健力宝、王老吉等）", "en": "CHINESE DRINKS (JIANLIBAO, WANG LAOJI…)" }, "price": "5.50" },
-        { "name": { "fr": "EVIAN (1 LITRE)", "cn": "依云水1升", "en": "EVIAN (1 LITRE)" }, "price": "6.00" },
-        { "name": { "fr": "PERRIER (1 LITRE)", "cn": "苏打水1升", "en": "PERRIER (1 LITRE)" }, "price": "6.50" }
+        { "name": { "fr": "Coca / cola", "cn": "可乐", "en": "Coke / cola" }, "price": "4.00" },
+        { "name": { "fr": "Perrier", "cn": "Perrier", "en": "Perrier" }, "price": "4.00" },
+        { "name": { "fr": "Orangina", "cn": "橘子汽水", "en": "Orangina" }, "price": "4.00" },
+        { "name": { "fr": "Sprite", "cn": "雪碧", "en": "Sprite" }, "price": "4.00" },
+        { "name": { "fr": "Jus (litchi, ananas, pomme, orange)", "cn": "果汁饮品（荔枝、菠萝、苹果、橘子）", "en": "Juice (lychee, pineapple, apple, orange)" }, "price": "4.50" },
+        { "name": { "fr": "Eau de coco / lait de coco", "cn": "椰子水/椰子奶", "en": "Coconut water / coconut milk" }, "price": "5.00" },
+        { "name": { "fr": "Iced tea", "cn": "冰红茶", "en": "Iced tea" }, "price": "4.50" },
+        { "name": { "fr": "Boissons chinoises (jianlibao, wang laoji…)", "cn": "中国饮料（健力宝、王老吉等）", "en": "Chinese drinks (jianlibao, wang laoji…)" }, "price": "5.50" },
+        { "name": { "fr": "Evian (1 litre)", "cn": "依云水1升", "en": "Evian (1 litre)" }, "price": "6.00" },
+        { "name": { "fr": "Perrier (1 litre)", "cn": "苏打水1升", "en": "Perrier (1 litre)" }, "price": "6.50" }
       ]
     },
     "desserts": {
@@ -230,18 +230,18 @@
       "column": 1,
       "rank": 1,
       "color": "#C2185B",
-      "sectionImages": ["Images/original/Tangyuan.png"],
-      "icon": "Images/sectionIcons/icon_desserts.png",
+      "sectionImages": ["images/sections/tang_yuan.png"],
+      "icon": "images/icons/icon_desserts.svg",
       "title": {
-        "fr": "DESSERTS",
+        "fr": "Desserts",
         "cn": "甜点",
-        "en": "DESSERTS"
+        "en": "Desserts"
       },
       "items": [
-        { "name": { "fr": "BOULETTES DE RIZ GLUANT À LA PÂTE DE HARICOTS ROUGES", "cn": "红豆沙汤圆", "en": "RED BEAN STICKY RICE BALLS" }, "price": "6.80" },
-        { "name": { "fr": "BOULES DE RIZ GLUANT AU SÉSAME NOIR", "cn": "黑芝麻汤圆", "en": "BLACK SESAME STICKY RICE BALLS" }, "price": "7.20" },
-        { "name": { "fr": "BÂTONNET GLACÉ AUX FRUITS", "cn": "水果棒冰", "en": "FRUIT POPSICLE" }, "price": "4.50" },
-        { "name": { "fr": "GLACE", "cn": "冰激凌", "en": "ICE CREAM" }, "price": "6.80" }
+        { "name": { "fr": "Boulettes de riz gluant à la pâte de haricots rouges", "cn": "红豆沙汤圆", "en": "Red bean sticky rice balls" }, "price": "6.80" },
+        { "name": { "fr": "Boules de riz gluant au sésame noir", "cn": "黑芝麻汤圆", "en": "Black sesame sticky rice balls" }, "price": "7.20" },
+        { "name": { "fr": "Bâtonnet glacé aux fruits", "cn": "水果棒冰", "en": "Fruit popsicle" }, "price": "4.50" },
+        { "name": { "fr": "Glace", "cn": "冰激凌", "en": "Ice cream" }, "price": "6.80" }
       ]
     },
     "formules-baozi": {
@@ -249,35 +249,35 @@
       "column": 1,
       "rank": 1,
       "color": "#2E7D32",
-      "icon": "Images/sectionIcons/icon_baozi.png",
+      "icon": "images/icons/icon_baozi.svg",
       "title": {
-        "fr": "FORMULES BAOZI",
+        "fr": "Formules baozi",
         "cn": "包子套餐",
-        "en": "BAOZI COMBOS"
+        "en": "Baozi combos"
       },
       "subtitle": {
-        "fr": "BOISSON AU CHOIX : SOJA · COCA · PERRIER · ORANGINA · SPRITE · SIROP",
+        "fr": "Boisson au choix : soja · coca · perrier · orangina · sprite · sirop",
         "cn": "指定饮品：豆浆、可乐、汽水、橘子、雪碧、糖浆水",
-        "en": "DRINK OF YOUR CHOICE : SOJA · COKE · PERRIER · ORANGINA · SPRITE · SYRUP"
+        "en": "Drink of your choice : soja · coke · perrier · orangina · sprite · syrup"
       },
       "items": [
         {
-          "name": { "fr": "BAOZI AU VÉGÉTARIEN x 2", "cn": "素菜包子 x2", "en": "VEGETARIAN BAOZI x 2" },
+          "name": { "fr": "Baozi au végétarien x 2", "cn": "素菜包子 x2", "en": "Vegetarian baozi x 2" },
           "description": { "fr": "+ boisson au choix ou petit accompagnement", "cn": "+ 指定饮品 或 小菜", "en": "+ drink or side of your choice" },
           "price": "8.80"
         },
         {
-          "name": { "fr": "BAOZI AU PORC x 2", "cn": "猪肉包子 x2", "en": "PORK BAOZI x 2" },
+          "name": { "fr": "Baozi au porc x 2", "cn": "猪肉包子 x2", "en": "Pork baozi x 2" },
           "description": { "fr": "+ boisson au choix ou petit accompagnement", "cn": "+ 指定饮品 或 小菜", "en": "+ drink or side of your choice" },
           "price": "9.80"
         },
         {
-          "name": { "fr": "BAOZI AU BŒUF x 2", "cn": "牛肉包子 x2", "en": "BEEF BAOZI x 2" },
+          "name": { "fr": "Baozi au bœuf x 2", "cn": "牛肉包子 x2", "en": "Beef baozi x 2" },
           "description": { "fr": "+ boisson au choix ou petit accompagnement", "cn": "+ 指定饮品 或 小菜", "en": "+ drink or side of your choice" },
           "price": "10.80"
         },
         {
-          "name": { "fr": "ASSORTIMENT BAOZI x 3", "cn": "包子全家福 x3", "en": "BAOZI SAMPLER x 3" },
+          "name": { "fr": "Assortiment baozi x 3", "cn": "包子全家福 x3", "en": "Baozi sampler x 3" },
           "description": { "fr": "(bœuf + porc + végétarien) + boisson au choix + petit accompagnement", "cn": "（牛肉+猪肉+蔬菜包）+ 指定饮品 + 小菜", "en": "(beef + pork + veg) + drink + side" },
           "price": "15.80"
         }
@@ -288,23 +288,23 @@
       "column": 1,
       "rank": 2,
       "color": "#DB4637",
-      "icon": "Images/sectionIcons/icon_wontons.png",
+      "icon": "images/icons/icon_wontons.svg",
       "title": {
-        "fr": "FORMULES WONTONS + BAOZI",
+        "fr": "Formules wontons + baozi",
         "cn": "馄饨 + 包子套餐",
-        "en": "WONTONS + BAOZI COMBOS"
+        "en": "Wontons + baozi combos"
       },
       "subtitle": {
-        "fr": "SAUCE PIQUANTE OU EN BOUILLON · NIVEAU DE PIMENT AU CHOIX",
+        "fr": "Sauce piquante ou en bouillon · Niveau de piment au choix",
         "cn": "可选红油底或汤馄饨 · 辣度可选",
-        "en": "SPICY SAUCE OR BROTH · SPICE LEVEL OF YOUR CHOICE"
+        "en": "Spicy sauce or broth · Spice level of your choice"
       },
       "items": [
-        { "name": { "fr": "WONTONS AU PORC + BAOZI AU CHOIX", "cn": "猪肉馄饨 + 包子（口味可选）", "en": "PORK WONTONS + BAOZI OF YOUR CHOICE" }, "price": "16.80" },
-        { "name": { "fr": "WONTONS VÉGÉTARIENS + BAOZI AU CHOIX", "cn": "蔬菜馄饨 + 包子（口味可选）", "en": "VEGETARIAN WONTONS + BAOZI OF YOUR CHOICE" }, "price": "16.80" },
-        { "name": { "fr": "WONTONS À LA CORIANDRE + BAOZI AU CHOIX", "cn": "香菜猪肉馄饨 + 包子（口味可选）", "en": "CORIANDER WONTONS + BAOZI OF YOUR CHOICE" }, "price": "17.80" },
-        { "name": { "fr": "WONTONS AU PORC ET ŒUFS DE CENT ANS + BAOZI AU CHOIX", "cn": "皮蛋猪肉馄饨 + 包子（口味可选）", "en": "CENTURY EGG & PORK WONTONS + BAOZI OF YOUR CHOICE" }, "price": "18.80" },
-        { "name": { "fr": "WONTONS AU PORC ET CREVETTES + BAOZI AU CHOIX", "cn": "虾仁猪肉馄饨 + 包子（口味可选）", "en": "SHRIMP & PORK WONTONS + BAOZI OF YOUR CHOICE" }, "price": "18.80" }
+        { "name": { "fr": "Wontons au porc + baozi au choix", "cn": "猪肉馄饨 + 包子（口味可选）", "en": "Pork wontons + baozi of your choice" }, "price": "16.80" },
+        { "name": { "fr": "Wontons végétariens + baozi au choix", "cn": "蔬菜馄饨 + 包子（口味可选）", "en": "Vegetarian wontons + baozi of your choice" }, "price": "16.80" },
+        { "name": { "fr": "Wontons à la coriandre + baozi au choix", "cn": "香菜猪肉馄饨 + 包子（口味可选）", "en": "Coriander wontons + baozi of your choice" }, "price": "17.80" },
+        { "name": { "fr": "Wontons au porc et œufs de cent ans + baozi au choix", "cn": "皮蛋猪肉馄饨 + 包子（口味可选）", "en": "Century egg & pork wontons + baozi of your choice" }, "price": "18.80" },
+        { "name": { "fr": "Wontons au porc et crevettes + baozi au choix", "cn": "虾仁猪肉馄饨 + 包子（口味可选）", "en": "Shrimp & pork wontons + baozi of your choice" }, "price": "18.80" }
       ]
     },
     "formules-nouilles": {
@@ -312,22 +312,22 @@
       "column": 2,
       "rank": 1,
       "color": "#00796B",
-      "icon": "Images/sectionIcons/icon_nouilles.png",
+      "icon": "images/icons/icon_nouilles.svg",
       "title": {
-        "fr": "FORMULES NOUILLES + BAOZI",
+        "fr": "Formules nouilles + baozi",
         "cn": "面条 + 包子套餐",
-        "en": "NOODLES + BAOZI COMBOS"
+        "en": "Noodles + baozi combos"
       },
       "subtitle": {
-        "fr": "NIVEAU DE PIMENT AU CHOIX",
+        "fr": "Niveau de piment au choix",
         "cn": "辣度可选",
-        "en": "SPICE LEVEL OF YOUR CHOICE"
+        "en": "Spice level of your choice"
       },
       "items": [
-        { "name": { "fr": "NOUILLES À LA SAUCE AUX CACAHUÈTES + BAOZI AU CHOIX", "cn": "花生酱拌面 + 包子（口味可选）", "en": "PEANUT SAUCE NOODLES + BAOZI OF YOUR CHOICE" }, "price": "15.80" },
-        { "name": { "fr": "NOUILLES ARROSÉES D'HUILE PIMENTÉE + BAOZI AU CHOIX", "cn": "油泼面 + 包子（口味可选）", "en": "CHILI OIL NOODLES + BAOZI OF YOUR CHOICE" }, "price": "15.80" },
-        { "name": { "fr": "NOUILLES AU PORC HACHÉ ET LÉGUMES FRAIS + BAOZI AU CHOIX", "cn": "肉臊杂酱拌面 + 包子（口味可选）", "en": "MINCED PORK & VEGETABLE NOODLES + BAOZI OF YOUR CHOICE" }, "price": "16.80" },
-        { "name": { "fr": "NOUILLES AU PORC HACHÉ EN BOUILLON + BAOZI AU CHOIX", "cn": "肉臊汤面 + 包子（口味可选）", "en": "MINCED PORK NOODLE SOUP + BAOZI OF YOUR CHOICE" }, "price": "17.80" }
+        { "name": { "fr": "Nouilles à la sauce aux cacahuètes + baozi au choix", "cn": "花生酱拌面 + 包子（口味可选）", "en": "Peanut sauce noodles + baozi of your choice" }, "price": "15.80" },
+        { "name": { "fr": "Nouilles arrosées d'huile pimentée + baozi au choix", "cn": "油泼面 + 包子（口味可选）", "en": "Chili oil noodles + baozi of your choice" }, "price": "15.80" },
+        { "name": { "fr": "Nouilles au porc haché et légumes frais + baozi au choix", "cn": "肉臊杂酱拌面 + 包子（口味可选）", "en": "Minced pork & vegetable noodles + baozi of your choice" }, "price": "16.80" },
+        { "name": { "fr": "Nouilles au porc haché en bouillon + baozi au choix", "cn": "肉臊汤面 + 包子（口味可选）", "en": "Minced pork noodle soup + baozi of your choice" }, "price": "17.80" }
       ]
     }
   }

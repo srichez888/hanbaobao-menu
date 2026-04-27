@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#DB4637"/>
+  <g transform="translate(50,50)">
+    <!-- Bowl -->
+    <ellipse cx="0" cy="8" rx="26" ry="10" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <path d="M-26,8 Q-26,22 0,22 Q26,22 26,8" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <!-- Wontons in bowl -->
+    <ellipse cx="-8" cy="4" rx="7" ry="4" fill="none" stroke="#fff" stroke-width="2"/>
+    <ellipse cx="8" cy="4" rx="7" ry="4" fill="none" stroke="#fff" stroke-width="2"/>
+    <!-- Garnish dots -->
+    <circle cx="-6" cy="1" r="1.5" fill="#7CB342"/>
+    <circle cx="6" cy="1" r="1.5" fill="#7CB342"/>
+    <!-- Steam -->
+    <path d="M-5,-4 Q-5,-10 -2,-12" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M5,-4 Q5,-10 2,-12" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  </g>
+</svg>
