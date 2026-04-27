@@ -20,18 +20,18 @@
       "column": 1,
       "rank": 1,
       "color": "#DB4637",
-      "sectionImages": ["images/sections/wonton.png", "images/sections/wonton_spicy.png"],
+      "sectionImages": [{ "src": "images/sections/wonton.png" }, { "src": "images/sections/wonton_spicy.png" , "right": "10mm", "top": "-10mm"}],
       "icon": "images/icons/icon_wontons.svg",
       "title": {
         "fr": "Wontons",
         "cn": "馄饨",
         "en": "Wontons"
       },
-      "subtitle": {
-        "fr": "Aux choix : en bouillon ou sauce piquante",
-        "cn": "可选：汤馄饨 或 红油馄饨",
-        "en": "Choice of : in broth or spicy sauce"
-      },
+      "chips": [
+        { "fr": "en bouillon", "cn": "汤馄饨", "en": "in broth", "color": "#00796B" },
+        { "fr": "ou", "cn": "或", "en": "or", "color": null },
+        { "fr": "sauce piquante", "cn": "红油馄饨", "en": "spicy sauce", "color": "#DB4637" }
+      ],
       "items": [
         { "name": { "fr": "Wontons au porc", "cn": "猪肉馄饨", "en": "Pork wontons" }, "price": "13.80" },
         { "name": { "fr": "Wontons aux crevettes", "cn": "猪肉虾仁馄饨", "en": "Shrimp wontons" }, "price": "15.80" },
@@ -88,7 +88,7 @@
       "column": 2,
       "rank": 1,
       "color": "#7B5E40",
-      "sectionImages": ["images/sections/idk.png"],
+      "sectionImages": [{ "src": "images/sections/idk.png" }],
       "icon": "images/icons/icon_riz.svg",
       "title": {
         "fr": "Riz garnis",
@@ -111,7 +111,7 @@
       "column": 1,
       "rank": 3,
       "color": "#2E7D32",
-      "sectionImages": ["images/sections/baozi.png"],
+      "sectionImages": [{ "src": "images/sections/baozi.png" }],
       "icon": "images/icons/icon_baozi.svg",
       "title": {
         "fr": "Baozi",
@@ -129,7 +129,7 @@
       "column": 2,
       "rank": 4,
       "color": "#2E7D32",
-      "sectionImages": ["images/sections/wd.png"],
+      "sectionImages": [{ "src": "images/sections/wd.png" }],
       "icon": "images/icons/icon_smalldish.svg",
       "title": {
         "fr": "Petit accompagnement",
@@ -230,7 +230,7 @@
       "column": 1,
       "rank": 1,
       "color": "#C2185B",
-      "sectionImages": ["images/sections/tang_yuan.png"],
+      "sectionImages": [{ "src": "images/sections/tang_yuan.png" }],
       "icon": "images/icons/icon_desserts.svg",
       "title": {
         "fr": "Desserts",
