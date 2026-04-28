@@ -217,11 +217,20 @@
     align-self: baseline;
   }
 
+  .item-veggie {
+    min-width: 16px;
+    max-width: 16px;
+  }
+
   .veggie-icon {
     height: 0.9em;
     width: auto;
     vertical-align: middle;
     margin-right: 0.5mm;
+  }
+
+  .item-layout {
+    display: flex;
   }
 
   .fav-heart {
@@ -426,8 +435,8 @@
   <div class="card-content">
     <div class="card-items">
       {{#each items}}
-      <div style="display: flex;">
-      <div style="width:16px;">{{#if vegetarian}}<img class="veggie-icon" src="images/icons/leaf.png" alt="végétarien">{{/if}}</div>
+      <div class="item-layout">
+      <div class="item-veggie">{{#if vegetarian}}<img class="veggie-icon" src="images/icons/leaf.png" alt="végétarien">{{/if}}</div>
       <div class="item-group">
         
         <div class="item-row">
