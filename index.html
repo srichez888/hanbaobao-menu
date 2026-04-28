@@ -147,10 +147,14 @@
   .card-title {
     font-size: 9.5pt;
     font-weight: 700;
-    color: var(--c, #8D6E63);
+    color: var(--c-text, #000000);
+    background: var(--c, #8D6E63);
+    padding: 1mm 3mm;
+    border-radius: 3mm;
     letter-spacing: 2pt;
     text-transform: uppercase;
     line-height: 1.2;
+    display: inline-block;
   }
 
   .card-subtitle {
@@ -394,7 +398,7 @@
 </script>
 
 <script id="tpl-card" type="text/x-handlebars-template">
-<div class="menu-card" style="--c:{{color}}">
+<div class="menu-card" style="--c:{{color}};--c-text:{{cText}}">
   <div class="card-header">
     {{#if icon}}<img class="card-icon" src="{{icon}}" alt="">{{/if}}
     <div class="card-header-text">
@@ -481,13 +485,22 @@
   });
 
   Handlebars.registerPartial('card', document.getElementById('tpl-card').innerHTML);
+  function contrastColor(hex) {
+    var c = hex.replace('#', '');
+    var r = parseInt(c.substring(0, 2), 16);
+    var g = parseInt(c.substring(2, 4), 16);
+    var b = parseInt(c.substring(4, 6), 16);
+    var lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    return lum > 0.55 ? '#000000' : '#FFFFFF';
+  }
+
   var tpl = Handlebars.compile(document.getElementById('tpl-menu').innerHTML);
 
   function render() {
     var byPage = {};
     Object.keys(menuData.sections).forEach(function(key) {
       var s = Object.assign({ id: key }, menuData.sections[key]);
-      // collect all notes: section-level + item-level footnotes
+      s.cText = contrastColor(s.color || '#8D6E63');
       var noteNum = 0;
       s.notes = [];
       if (s.items) s.items.forEach(function(item) { item.noteNums = []; });
