@@ -136,7 +136,8 @@
             "cn": "蔬菜拌面",
             "en": "Vegetable noodles"
           },
-          "price": "13.80"
+          "price": "13.80",
+          "vegetarian": true
         },
         {
           "name": {
@@ -215,7 +216,8 @@
             "cn": "蔬菜拌粉",
             "en": "Vegetable Rice Vermicelli"
           },
-          "price": "13.80"
+          "price": "13.80",
+          "vegetarian": true
         },
         {
           "name": {
