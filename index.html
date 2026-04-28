@@ -99,7 +99,7 @@
   /* ── Columns ── */
   .columns {
     display: flex;
-    gap: 5mm;
+    gap: 2mm;
     align-items: flex-start;
   }
 
@@ -107,7 +107,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 4mm;
+    gap: 2mm;
   }
 
   /* ── Card ── */
@@ -115,7 +115,7 @@
     border-radius: 32px;
     border: 1.5px solid var(--c, #8D6E63);
     background: #FCF5EECC;
-    padding: 3mm 3.5mm 3.5mm;
+    padding: 3mm 2mm 3mm 2mm;
     break-inside: avoid;
     page-break-inside: avoid;
   }
@@ -188,6 +188,7 @@
 
   .item-group {
     margin-bottom: 1.5mm;
+    flex-grow: 1;
   }
 
   .item-group:last-child {
@@ -202,8 +203,9 @@
     letter-spacing: 0.3pt;
     line-height: 1.3;
     flex-shrink: 0;
-    max-width: 75%;
+    max-width: 78%;
     text-transform: capitalize;
+    
   }
 
   .item-price {
@@ -219,15 +221,19 @@
     height: 0.9em;
     width: auto;
     vertical-align: middle;
-    margin-left: 0.5mm;
+    margin-right: 0.5mm;
   }
 
-  .fav-star {
-    color: #C02C2C;
-    font-size: 0.75em;
+  .fav-heart {
+    color: #C02C2C;  
+    font-size: 1em;
     vertical-align: middle;
     margin-left: 0.5mm;
+    -webkit-text-stroke: 1px #C02C2C;
+    color: transparent;
+    padding-bottom: 2mm;
   }
+
 
   .item-desc {
     font-size: 9pt;
@@ -236,6 +242,17 @@
     margin-top: 0.5mm;
     line-height: 1.35;
   }
+
+  .item-note-ref {
+    font-size: 0.6em;
+    color: #8D6E63;
+    margin-left: 0.3mm;
+  }
+
+  .item-note-ref span + span::before {
+    content: ",";
+  }
+
 
   /* ── Card photos ── */
   .menu-card {
@@ -250,6 +267,9 @@
 
   .card-items {
     width: 100%;
+    gap: 1mm;
+  display: flex;
+  flex-direction: column;
   }
 
   .card-photo {
@@ -265,27 +285,19 @@
     z-index: 1;
   }
 
-  /* ── Spice note ── */
-  .spice-note {
-    text-align: center;
-    margin-top: 5mm;
-    font-size: 6pt;
-    color: #C02C2C;
-    letter-spacing: 1pt;
-    font-weight: 500;
-  }
-
-  /* ── Drink choice note ── */
-  .drink-choice-note {
+  /* ── Card notes ── */
+  .card-note {
+    text-align: left;
     margin-top: 3mm;
-    font-size: 8pt;
-    color: #7B5A4A;
-    line-height: 1.4;
+    font-size: 7pt;
+    color: #8D6E63;
+    letter-spacing: 0.5pt;
+    font-weight: 500;
+    line-height: 1.3;
   }
 
-  .drink-choice-note strong {
-    font-weight: 700;
-    color: #2D1A0E;
+  .card-note sup {
+    font-size: 0.7em;
   }
 
   .spice-icons {
@@ -386,21 +398,24 @@
   <div class="card-content">
     <div class="card-items">
       {{#each items}}
+      <div style="display: flex;">
+      <div style="width:16px;">{{#if vegetarian}}<img class="veggie-icon" src="images/icons/leaf.png" alt="végétarien">{{/if}}</div>
       <div class="item-group">
+        
         <div class="item-row">
-          <div class="item-name">{{t name}}{{#if favorite}} <span class="fav-star">&#9733;</span>{{/if}}{{#if vegetarian}} <img class="veggie-icon" src="images/icons/leaf.png" alt="végétarien">{{/if}}</div>
+          <div class="item-name">{{t name}}{{#if noteNums}}<sup class="item-note-ref">{{#each noteNums}}<span>{{this}}</span>{{/each}}</sup>{{/if}}<span class="fav-heart">&#9829;</span></div>
           <div class="item-price">{{price}}&nbsp;€</div>
         </div>
         {{#if name.cn}}<div class="cn">{{name.cn}}</div>{{/if}}
         {{#if description}}<div class="item-desc">{{t description}}<br><span class="cn">{{description.cn}}</span></div>{{/if}}
       </div>
+      </div>
       {{/each}}
     </div>
-    {{#if spiceNote}}
-    <div class="spice-note">{{t spiceNote}}<br><span class="cn">{{spiceNote.cn}}</span></div>
-    {{/if}}
-    {{#if drinkChoice}}
-    <div class="drink-choice-note"><strong>{{t drinkChoice.name}}</strong> {{t drinkChoice.description}}<br><span class="cn"><strong>{{drinkChoice.name.cn}}</strong> {{drinkChoice.description.cn}}</span></div>
+    {{#if notes}}
+    {{#each notes}}
+    <div class="card-note"><sup>{{num}}</sup> {{t text}}<br><span class="cn">{{text.cn}}</span></div>
+    {{/each}}
     {{/if}}
     {{#if sectionImages}}
       {{#each sectionImages}}
@@ -432,8 +447,36 @@
     var byPage = {};
     Object.keys(menuData.sections).forEach(function(key) {
       var s = Object.assign({ id: key }, menuData.sections[key]);
-      if (s.isSpicy) s.spiceNote = menuData.spiceNote;
-      if (s.isDrinkChoice) s.drinkChoice = menuData.drinkChoice;
+      // collect all notes: section-level + item-level footnotes
+      var noteNum = 0;
+      s.notes = [];
+      if (menuData.notes) {
+        // section-level notes → auto-apply to all items
+        if (s.sectionNotes && s.items) {
+          s.sectionNotes.forEach(function(id) {
+            if (menuData.notes[id]) {
+              noteNum++;
+              s.notes.push({ num: noteNum, text: menuData.notes[id] });
+              s.items.forEach(function(item) {
+                item.noteNums = [];
+                item.noteNums.push(noteNum);
+              });
+            }
+          });
+        }
+        // item-level notes
+        if (s.items) {
+          s.items.forEach(function(item) {
+            item.noteNums = item.noteNums || [];
+            if (item.note && menuData.notes[item.note]) {
+              noteNum++;
+              item.noteNums.push(noteNum);
+              s.notes.push({ num: noteNum, text: menuData.notes[item.note] });
+            }
+          });
+        }
+      }
+      delete s.sectionNotes;
       var p = s.page || 1;
       if (!byPage[p]) byPage[p] = [];
       byPage[p].push(s);

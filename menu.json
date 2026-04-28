@@ -4,24 +4,28 @@
     "cn": "汉包包",
     "en": "Hanbaobao"
   },
-  "spiceNote": {
-    "fr": "Sauce piquante Léger / Moyen / Fort · En bouillon est non piquant",
-    "cn": "辣度可选（微辣、中辣、特辣）· 汤类不辣",
-    "en": "Spicy sauce Mild / Medium / Hot · In broth is not spicy"
+  "notes": {
+    "pickles": {
+      "fr": "Légumes frais marinés sur place dans une préparation vinaigrée, légèrement sucrée et parfumée aux épices, offrant une touche croquante, acidulée et rafraîchissante pour accompagner nos plats.",
+      "cn": "店内自制泡菜，醋汁微甜、香料入味，口感爽脆酸甜，搭配菜品清爽解腻。",
+      "en": "House-marinated fresh vegetables in a sweetened spiced vinegar brine — crunchy, tangy and refreshing to accompany your dishes."
+    },
+    "spicy": {
+      "fr": "Sauce piquante Léger / Moyen / Fort · Le bouillon n'est pas pimenté",
+      "cn": "辣度可选（微辣、中辣、特辣）· 汤类不辣",
+      "en": "Spicy sauce Mild / Medium / Hot · In broth is not spicy"
+    },
+    "drink": {
+      "fr": "Boisson au choix : lait de soja · coca · perrier · orangina · sprite · sirop",
+      "cn": "指定饮品：豆浆、可乐、汽水、橘子、雪碧、糖浆水",
+      "en": "Drink of your choice: soy milk · coke · perrier · orangina · sprite · syrup"
+    },
+    "soyMilk": {
+      "fr": "Le lait de soja est servi froid par défaut. Si vous le préférez chaud, veuillez indiquer la température souhaitée au comptoir.",
+      "cn": "豆浆默认冰豆浆，需要热豆浆可以和前台选热度",
+      "en": "Soy milk is served cold by default. If you prefer hot, please indicate the desired temperature at the counter."
+    }
   },
-  "drinkChoice":
-  {
-          "name": {
-            "fr": "Boisson au choix",
-            "cn": "指定饮品",
-            "en": "Drink of your choice"
-          },
-          "description": {
-            "fr": "lait de soja · coca · perrier · orangina · sprite · sirop",
-            "cn": "豆浆、可乐、汽水、橘子、雪碧、糖浆水",
-            "en": "soy milk · coke · perrier · orangina · sprite · syrup"
-          }
-        },
   "tagline": {
     "fr": "Wontons — Nouilles — Riz",
     "cn": "馄饨 — 面条 — 米饭",
@@ -32,7 +36,7 @@
       "page": 1,
       "column": 1,
       "rank": 1,
-      "isSpicy": true,
+      "sectionNotes": ["spicy"],
       "color": "#F4A8A0",
       "sectionImages": [
         {
@@ -120,7 +124,7 @@
       "page": 1,
       "column": 1,
       "rank": 2,
-      "isSpicy": true,
+      "sectionNotes": ["spicy"],
       "color": "#C9B89F",
       "icon": "images/icons/icon_nouilles.svg",
       "title": {
@@ -200,7 +204,7 @@
       "page": 1,
       "column": 2,
       "rank": 1,
-      "isSpicy": true,
+      "sectionNotes": ["spicy"],
       "color": "#D4A8C8",
       "icon": "images/icons/icon_vermicelles.svg",
       "title": {
@@ -446,7 +450,8 @@
             "en": "Homemade pickles"
           },
           "price": "3.50",
-          "vegetarian": true
+          "vegetarian": true,
+          "note": "pickles"
         }
       ]
     },
@@ -618,11 +623,7 @@
             "en": "Soy milk"
           },
           "price": "5.00",
-          "description": {
-            "fr": "Le lait de soja est servi froid par défaut. Si vous le préférez chaud, veuillez indiquer la température souhaitée au comptoir.",
-            "cn": "豆浆默认冰豆浆，需要热豆浆可以和前台选热度",
-            "en": "Soy milk is served as ice soy milk by default. If you prefer hot soy milk, you can choose the desired temperature at the front desk."
-          }
+          "note": "soyMilk"
         },
         {
           "name": {
@@ -865,8 +866,7 @@
       "page": 4,
       "column": 1,
       "rank": 1,
-      "isSpicy": true,
-      "isDrinkChoice": true,
+      "sectionNotes": ["spicy", "drink"],
       "color": "#A8C89A",
       "icon": "images/icons/icon_baozi.svg",
       "title": {
@@ -934,7 +934,7 @@
       "page": 4,
       "column": 1,
       "rank": 2,
-      "isSpicy": true,
+      "sectionNotes": ["spicy"],
       "color": "#F4A8A0",
       "icon": "images/icons/icon_wontons.svg",
       "title": {
@@ -990,7 +990,7 @@
       "page": 4,
       "column": 2,
       "rank": 1,
-      "isSpicy": true,
+      "sectionNotes": ["spicy"],
       "color": "#7EBFB2",
       "icon": "images/icons/icon_nouilles.svg",
       "title": {
