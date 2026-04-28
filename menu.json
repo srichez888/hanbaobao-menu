@@ -550,7 +550,7 @@
         {
           "src": "images/sections/citronmeil.png",
           "right": "20mm",
-          "top": "35mm",
+          "top": "40mm",
           "size": "13mm"
         }
       ],
@@ -750,8 +750,8 @@
       "sectionImages": [
         {
           "src": "images/sections/vinprune.png",
-          "right": "15mm",
-          "top": "60mm",
+          "right": "17mm",
+          "top": "70mm",
           "size": "15mm"
         }
       ],
@@ -808,7 +808,7 @@
           "name": {
             "fr": "Vin de prune / litchi / osmanthe (pichet)",
             "cn": "梅子酒 / 荔枝酒 / 桂花酒 (小壶)",
-            "en": "Plum wine / lychee wine / osmanthus wine (carafe)"
+            "en": "Plum wine / lychee wine / osmanthus_wine (carafe)"
           },
           "price": "9.80"
         },
@@ -843,7 +843,7 @@
         {
           "src": "images/sections/iceScream.png",
           "right": "20mm",
-          "top": "35mm",
+          "top": "40mm",
           "size": "15mm"
         }
       ],
