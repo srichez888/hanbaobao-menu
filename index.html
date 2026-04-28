@@ -136,6 +136,7 @@
     background: var(--c, #8D6E63);
     /* padding: 0.8mm; */
     flex-shrink: 0;
+    align-self: start;
   }
 
   .card-header-text {
@@ -221,6 +222,13 @@
     margin-left: 0.5mm;
   }
 
+  .fav-star {
+    color: #C02C2C;
+    font-size: 0.75em;
+    vertical-align: middle;
+    margin-left: 0.5mm;
+  }
+
   .item-desc {
     font-size: 9pt;
     color: #8D6E63;
@@ -265,6 +273,19 @@
     color: #C02C2C;
     letter-spacing: 1pt;
     font-weight: 500;
+  }
+
+  /* ── Drink choice note ── */
+  .drink-choice-note {
+    margin-top: 3mm;
+    font-size: 8pt;
+    color: #7B5A4A;
+    line-height: 1.4;
+  }
+
+  .drink-choice-note strong {
+    font-weight: 700;
+    color: #2D1A0E;
   }
 
   .spice-icons {
@@ -367,7 +388,7 @@
       {{#each items}}
       <div class="item-group">
         <div class="item-row">
-          <div class="item-name">{{t name}}{{#if vegetarian}} <img class="veggie-icon" src="images/icons/leaf.png" alt="végétarien">{{/if}}</div>
+          <div class="item-name">{{t name}}{{#if favorite}} <span class="fav-star">&#9733;</span>{{/if}}{{#if vegetarian}} <img class="veggie-icon" src="images/icons/leaf.png" alt="végétarien">{{/if}}</div>
           <div class="item-price">{{price}}&nbsp;€</div>
         </div>
         {{#if name.cn}}<div class="cn">{{name.cn}}</div>{{/if}}
@@ -377,6 +398,9 @@
     </div>
     {{#if spiceNote}}
     <div class="spice-note">{{t spiceNote}}<br><span class="cn">{{spiceNote.cn}}</span></div>
+    {{/if}}
+    {{#if drinkChoice}}
+    <div class="drink-choice-note"><strong>{{t drinkChoice.name}}</strong> {{t drinkChoice.description}}<br><span class="cn"><strong>{{drinkChoice.name.cn}}</strong> {{drinkChoice.description.cn}}</span></div>
     {{/if}}
     {{#if sectionImages}}
       {{#each sectionImages}}
@@ -409,6 +433,7 @@
     Object.keys(menuData.sections).forEach(function(key) {
       var s = Object.assign({ id: key }, menuData.sections[key]);
       if (s.isSpicy) s.spiceNote = menuData.spiceNote;
+      if (s.isDrinkChoice) s.drinkChoice = menuData.drinkChoice;
       var p = s.page || 1;
       if (!byPage[p]) byPage[p] = [];
       byPage[p].push(s);
