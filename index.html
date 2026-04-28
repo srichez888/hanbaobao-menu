@@ -308,6 +308,33 @@
     font-size: 8pt;
   }
 
+  /* ── Language toggle ── */
+  .lang-toggle {
+    position: fixed;
+    top: 8mm;
+    right: 8mm;
+    z-index: 10;
+    display: flex;
+    gap: 2mm;
+  }
+
+  .lang-toggle button {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14pt;
+    font-weight: 700;
+    padding: 2mm 5mm;
+    border: 1.5px solid #8D6E63;
+    border-radius: 6mm;
+    background: #FCF5EE;
+    color: #8D6E63;
+    cursor: pointer;
+  }
+
+  .lang-toggle button.active {
+    background: #8D6E63;
+    color: #FCF5EE;
+  }
+
   @media print {
     .lang-toggle { display: none; }
     html, body { background: transparent; margin: 0; padding: 0; }
@@ -453,6 +480,7 @@
       // collect all notes: section-level + item-level footnotes
       var noteNum = 0;
       s.notes = [];
+      if (s.items) s.items.forEach(function(item) { item.noteNums = []; });
       if (menuData.notes) {
         // section-level notes → auto-apply to all items
         if (s.sectionNotes && s.items) {
@@ -461,7 +489,6 @@
               noteNum++;
               s.notes.push({ num: noteNum, text: menuData.notes[id] });
               s.items.forEach(function(item) {
-                item.noteNums = [];
                 item.noteNums.push(noteNum);
               });
             }
@@ -470,7 +497,6 @@
         // item-level notes
         if (s.items) {
           s.items.forEach(function(item) {
-            item.noteNums = item.noteNums || [];
             if (item.note && menuData.notes[item.note]) {
               noteNum++;
               item.noteNums.push(noteNum);
@@ -503,6 +529,7 @@
     currentLang = lang;
     document.getElementById('btn-fr').className = lang === 'fr' ? 'active' : '';
     document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
+    document.title = 'Hanbaobao' + (lang === 'en' ? 'En' : 'Fr');
     render();
   };
 
