@@ -397,7 +397,8 @@
             "cn": "猪肉包子",
             "en": "Pork Baozi"
           },
-          "price": "4.00"
+          "price": "4.00",
+          "favorite": true
         },
         {
           "name": {
@@ -433,7 +434,8 @@
             "en": "Chinese salad"
           },
           "price": "5.00",
-          "vegetarian": true
+          "vegetarian": true,
+          "favorite": true
         },
         {
           "name": {
@@ -544,6 +546,14 @@
       "column": 2,
       "rank": 1,
       "color": "#F0C06E",
+      "sectionImages": [
+        {
+          "src": "images/sections/citronmeil.png",
+          "right": "20mm",
+          "top": "35mm",
+          "size": "13mm"
+        }
+      ],
       "icon": "images/icons/icon_specialites.svg",
       "title": {
         "fr": "Spécialités",
@@ -557,7 +567,8 @@
             "cn": "柠檬姜汁饮",
             "en": "Lemon ginger infusion"
           },
-          "price": "7.20"
+          "price": "7.20",
+          "favorite": true
         },
         {
           "name": {
@@ -606,7 +617,8 @@
             "cn": "红糖姜饮",
             "en": "Brown sugar ginger infusion"
           },
-          "price": "6.50"
+          "price": "6.50",
+          "favorite": true
         },
         {
           "name": {
@@ -735,6 +747,14 @@
       "column": 1,
       "rank": 3,
       "color": "#7E6B99",
+      "sectionImages": [
+        {
+          "src": "images/sections/vinprune.png",
+          "right": "15mm",
+          "top": "60mm",
+          "size": "15mm"
+        }
+      ],
       "icon": "images/icons/icon_boissons.svg",
       "title": {
         "fr": "Alcool",
@@ -819,6 +839,12 @@
       "sectionImages": [
         {
           "src": "images/sections/tang_yuan.png"
+        },
+        {
+          "src": "images/sections/iceScream.png",
+          "right": "20mm",
+          "top": "35mm",
+          "size": "15mm"
         }
       ],
       "icon": "images/icons/icon_desserts.svg",
