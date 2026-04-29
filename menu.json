@@ -564,9 +564,10 @@
       "sectionImages": [
         {
           "src": "images/sections/citronmeil.png",
-          "right": "20mm",
-          "top": "40mm",
-          "size": "13mm"
+          
+          "size": "12mm",
+          "right": "5mm",
+          "top":"-3mm"
         }
       ],
       "icon": "images/icons/icon_specialites.svg",
