@@ -10,11 +10,6 @@
       "cn": "店内自制泡菜，醋汁微甜、香料入味，口感爽脆酸甜，搭配菜品清爽解腻。",
       "en": "House-marinated fresh vegetables in a sweetened spiced vinegar brine — crunchy, tangy and refreshing to accompany your dishes."
     },
-    "spicy": {
-      "fr": "Sauce piquante Léger / Moyen / Fort · Le bouillon n'est pas pimenté",
-      "cn": "辣度可选（微辣、中辣、特辣）· 汤类不辣",
-      "en": "Spicy sauce Mild / Medium / Hot · In broth is not spicy"
-    },
     "drink": {
       "fr": "Boisson au choix : lait de soja · coca · perrier · orangina · sprite · sirop",
       "cn": "指定饮品：豆浆、可乐、汽水、橘子、雪碧、糖浆水",
@@ -36,7 +31,6 @@
       "page": 1,
       "column": 1,
       "rank": 1,
-      "sectionNotes": ["spicy"],
       "color": "#F4A8A0",
       "sectionImages": [
         {
@@ -54,39 +48,21 @@
         "cn": "馄饨",
         "en": "Wontons"
       },
-      "chips": [
-        {
-          "fr": "en bouillon",
-          "cn": "汤馄饨",
-          "en": "in broth",
-          "color": "#00796B"
-        },
-        {
-          "fr": "ou",
-          "cn": "或",
-          "en": "or",
-          "color": null
-        },
-        {
-          "fr": "sauce piquante",
-          "cn": "红油馄饨",
-          "en": "spicy sauce",
-          "color": "#DB4637"
-        }
-      ],
       "items": [
         {
           "name": {
-            "fr": "Wontons au porc",
+            "fr": "Wontons en bouillon au porc",
             "cn": "猪肉馄饨",
             "en": "Pork wontons"
           },
           "price": "13.80",
-          "favorite": true
+          "tags": [
+            "favorite"
+          ]
         },
         {
           "name": {
-            "fr": "Wontons aux crevettes",
+            "fr": "Wontons en bouillon aux crevettes",
             "cn": "猪肉虾仁馄饨",
             "en": "Shrimp wontons"
           },
@@ -94,7 +70,7 @@
         },
         {
           "name": {
-            "fr": "Wontons à la coriandre",
+            "fr": "Wontons en bouillon à la coriandre",
             "cn": "猪肉香菜馄饨",
             "en": "Coriander wontons"
           },
@@ -102,21 +78,83 @@
         },
         {
           "name": {
-            "fr": "Wontons végétariens",
+            "fr": "Wontons en bouillon végétariens",
             "cn": "素馄饨",
             "en": "Veggie wontons"
           },
           "price": "13.80",
-          "vegetarian": true
+          "tags": [
+            "vegetarian"
+          ]
         },
         {
           "name": {
-            "fr": "Wontons aux œufs de cent ans",
+            "fr": "Wontons en bouillon aux œufs de cent ans",
             "cn": "猪肉皮蛋馄饨",
             "en": "Century egg wontons"
           },
           "price": "14.80",
-          "favorite": true
+          "tags": [
+            "favorite"
+          ]
+        },
+        {
+          "name": {
+            "fr": "Wontons sauce piquante au porc",
+            "cn": "猪肉馄饨",
+            "en": "Pork wontons"
+          },
+          "price": "13.80",
+          "tags": [
+            "favorite",
+            "spicy"
+          ]
+        },
+        {
+          "name": {
+            "fr": "Wontons sauce piquante aux crevettes",
+            "cn": "猪肉虾仁馄饨",
+            "en": "Shrimp wontons"
+          },
+          "price": "15.80",
+          "tags": [
+            "spicy"
+          ]
+        },
+        {
+          "name": {
+            "fr": "Wontons sauce piquante à la coriandre",
+            "cn": "猪肉香菜馄饨",
+            "en": "Coriander wontons"
+          },
+          "price": "14.80",
+          "tags": [
+            "spicy"
+          ]
+        },
+        {
+          "name": {
+            "fr": "Wontons sauce piquante végétariens",
+            "cn": "素馄饨",
+            "en": "Veggie wontons"
+          },
+          "price": "13.80",
+          "tags": [
+            "vegetarian",
+            "spicy"
+          ]
+        },
+        {
+          "name": {
+            "fr": "Wontons sauce piquante aux œufs de cent ans",
+            "cn": "猪肉皮蛋馄饨",
+            "en": "Century egg wontons"
+          },
+          "price": "14.80",
+          "tags": [
+            "favorite",
+            "spicy"
+          ]
         }
       ]
     },
@@ -124,7 +162,6 @@
       "page": 1,
       "column": 2,
       "rank": 1,
-      "sectionNotes": ["spicy"],
       "color": "#C9B89F",
       "icon": "images/icons/icon_nouilles.svg",
       "title": {
@@ -156,7 +193,9 @@
             "en": "Vegetable noodles"
           },
           "price": "13.80",
-          "vegetarian": true
+          "tags": [
+            "vegetarian"
+          ]
         },
         {
           "name": {
@@ -204,7 +243,6 @@
       "page": 1,
       "column": 1,
       "rank": 2,
-      "sectionNotes": ["spicy"],
       "color": "#D4A8C8",
       "icon": "images/icons/icon_vermicelles.svg",
       "title": {
@@ -236,7 +274,9 @@
             "en": "Vegetable Rice Vermicelli"
           },
           "price": "13.80",
-          "vegetarian": true
+          "tags": [
+            "vegetarian"
+          ]
         },
         {
           "name": {
@@ -304,7 +344,9 @@
             "en": "Pork & pickled cabbage rice"
           },
           "price": "15.80",
-          "favorite": true
+          "tags": [
+            "favorite"
+          ]
         },
         {
           "name": {
@@ -361,7 +403,9 @@
             "en": "Vegetarian rice"
           },
           "price": "13.80",
-          "vegetarian": true
+          "tags": [
+            "vegetarian"
+          ]
         },
         {
           "name": {
@@ -397,7 +441,9 @@
             "en": "Vegetable Baozi"
           },
           "price": "3.80",
-          "vegetarian": true
+          "tags": [
+            "vegetarian"
+          ]
         },
         {
           "name": {
@@ -406,7 +452,9 @@
             "en": "Pork Baozi"
           },
           "price": "4.00",
-          "favorite": true
+          "tags": [
+            "favorite"
+          ]
         },
         {
           "name": {
@@ -442,8 +490,10 @@
             "en": "Chinese salad"
           },
           "price": "5.00",
-          "vegetarian": true,
-          "favorite": true
+          "tags": [
+            "favorite",
+            "vegetarian"
+          ]
         },
         {
           "name": {
@@ -460,8 +510,10 @@
             "en": "Homemade pickles"
           },
           "price": "3.50",
-          "vegetarian": true,
-          "note": "pickles"
+          "note": "pickles",
+          "tags": [
+            "vegetarian"
+          ]
         }
       ]
     },
@@ -524,13 +576,6 @@
       "column": 1,
       "rank": 2,
       "color": "#8DB874",
-      "sectionImages": [
-        {
-          "src": "images/tea.png",
-           
-          "size": "18mm"
-        }
-      ],
       "icon": "images/icons/icon_thes.svg",
       "title": {
         "fr": "Thés & infusions",
@@ -561,15 +606,6 @@
       "column": 2,
       "rank": 1,
       "color": "#F0C06E",
-      "sectionImages": [
-        {
-          "src": "images/sections/citronmeil.png",
-          
-          "size": "12mm",
-          "right": "5mm",
-          "top":"-3mm"
-        }
-      ],
       "icon": "images/icons/icon_specialites.svg",
       "title": {
         "fr": "Spécialités",
@@ -584,7 +620,9 @@
             "en": "Lemon ginger infusion"
           },
           "price": "7.20",
-          "favorite": true
+          "tags": [
+            "favorite"
+          ]
         },
         {
           "name": {
@@ -601,7 +639,9 @@
             "en": "Honey lemon infusion"
           },
           "price": "6.00",
-          "favorite": true
+          "tags": [
+            "favorite"
+          ]
         },
         {
           "name": {
@@ -634,7 +674,9 @@
             "en": "Brown sugar ginger infusion"
           },
           "price": "6.50",
-          "favorite": true
+          "tags": [
+            "favorite"
+          ]
         },
         {
           "name": {
@@ -660,7 +702,9 @@
             "en": "Syrup (lemon, peach, strawberry, vanilla, melon)"
           },
           "price": "3.50",
-          "vegetarian": true
+          "tags": [
+            "vegetarian"
+          ]
         }
       ]
     },
@@ -763,14 +807,6 @@
       "column": 1,
       "rank": 3,
       "color": "#7E6B99",
-      "sectionImages": [
-        {
-          "src": "images/sections/vinprune.png",
-          "size": "15mm",
-          "right": "5mm",
-          "top":"-3mm"
-        }
-      ],
       "icon": "images/icons/icon_boissons.svg",
       "title": {
         "fr": "Alcool",
@@ -778,7 +814,6 @@
         "en": "Alcohol"
       },
       "items": [
-        
         {
           "name": {
             "fr": "Bière tsing tao",
@@ -818,7 +853,9 @@
             "en": "Ginger beer"
           },
           "price": "7.50",
-          "favorite": true
+          "tags": [
+            "favorite"
+          ]
         },
         {
           "name": {
@@ -844,7 +881,6 @@
           },
           "price": "9.80"
         }
-
       ]
     },
     "desserts": {
@@ -855,12 +891,6 @@
       "sectionImages": [
         {
           "src": "images/sections/tang_yuan.png"
-        },
-        {
-          "src": "images/sections/iceScream.png",
-          "right": "20mm",
-          "top": "40mm",
-          "size": "15mm"
         }
       ],
       "icon": "images/icons/icon_desserts.svg",
@@ -908,7 +938,9 @@
       "page": 4,
       "column": 1,
       "rank": 1,
-      "sectionNotes": ["spicy", "drink"],
+      "sectionNotes": [
+        "drink"
+      ],
       "color": "#A8C89A",
       "icon": "images/icons/icon_baozi.svg",
       "title": {
@@ -923,13 +955,15 @@
             "cn": "2 素菜包子",
             "en": "2 Vegetarian baozi"
           },
-          "vegetarian": true,
           "description": {
             "fr": "+ boisson au choix ou petit accompagnement",
             "cn": "+ 指定饮品 或 小菜",
             "en": "+ drink or side of your choice"
           },
-          "price": "8.80"
+          "price": "8.80",
+          "tags": [
+            "vegetarian"
+          ]
         },
         {
           "name": {
@@ -976,7 +1010,6 @@
       "page": 4,
       "column": 1,
       "rank": 2,
-      "sectionNotes": ["spicy"],
       "color": "#F4A8A0",
       "icon": "images/icons/icon_wontons.svg",
       "title": {
@@ -999,8 +1032,10 @@
             "cn": "蔬菜馄饨 + 包子（口味可选）",
             "en": "Vegetarian wontons + baozi of your choice"
           },
-          "vegetarian": true,
-          "price": "16.80"
+          "price": "16.80",
+          "tags": [
+            "vegetarian"
+          ]
         },
         {
           "name": {
@@ -1032,7 +1067,6 @@
       "page": 4,
       "column": 2,
       "rank": 1,
-      "sectionNotes": ["spicy"],
       "color": "#7EBFB2",
       "icon": "images/icons/icon_nouilles.svg",
       "title": {
@@ -1074,6 +1108,18 @@
           "price": "17.80"
         }
       ]
+    }
+  },
+  "pageNotes": {
+    "1": {
+      "icon": "images/item-icons/spicy.png",
+      "text": {
+        "fr": "Sauce piquante Léger / Moyen / Fort",
+        "cn": "辣度可选（微辣、中辣、特辣）· 汤类不辣",
+        "en": "Spicy sauce Mild / Medium / Hot"
+      },
+      "left": "12cm",
+      "top": "28cm"
     }
   }
 }

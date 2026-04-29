@@ -206,10 +206,7 @@
     color: #000000;
     letter-spacing: 0.3pt;
     line-height: 1.3;
-    flex-shrink: 0;
-    max-width: 83%;
     text-transform: capitalize;
-    
   }
 
   .item-price {
@@ -221,15 +218,19 @@
     align-self: baseline;
   }
 
-  .item-veggie {
+  .item-left-icon {
     min-width: 16px;
     max-width: 16px;
+    align-self: baseline;
   }
 
-  .veggie-icon {
+  .item-left-icon img, .tag-icon img {
     height: 0.9em;
     width: auto;
-    vertical-align: middle;
+    vertical-align: baseline;
+  }
+
+  .item-left-icon img {
     margin-right: 0.5mm;
   }
 
@@ -237,14 +238,17 @@
     display: flex;
   }
 
-  .fav-heart {
-    color: #C02C2C;  
-    font-size: 1em;
+  .tag-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5mm;
+    margin-left: 1mm;
     vertical-align: middle;
-    margin-left: 0.5mm;
-    -webkit-text-stroke: 1px #C02C2C;
-    color: transparent;
-    padding-bottom: 2mm;
+  }
+
+  .tag-icon {
+    display: inline-flex;
+    align-items: center;
   }
 
 
@@ -321,6 +325,22 @@
     font-size: 8pt;
   }
 
+  .page-note {
+    display: flex;
+    align-items: center;
+    gap: 2mm;
+    position: absolute;
+    font-size: 7pt;
+    color: #8D6E63;
+    letter-spacing: 0.5pt;
+    font-weight: 500;
+  }
+
+  .page-note-icon {
+    height: 1.1em;
+    width: auto;
+  }
+
   /* ── Language toggle ── */
   .lang-toggle {
     position: fixed;
@@ -392,6 +412,13 @@
     </div>
   </div>
 
+  {{#if pageNote}}
+  <div class="page-note" style="{{#if pageNote.left}}left:{{pageNote.left}};{{/if}}{{#if pageNote.top}}top:{{pageNote.top}};{{/if}}">
+    <img class="page-note-icon" src="{{pageNote.icon}}" alt="">
+    <span>{{t pageNote.text}}</span>
+  </div>
+  {{/if}}
+
 </div>
 {{/each}}
 </script>
@@ -439,16 +466,16 @@
     <div class="card-items">
       {{#each items}}
       <div class="item-layout">
-      <div class="item-veggie">{{#if vegetarian}}<img class="veggie-icon" src="images/icons/leaf.png" alt="végétarien">{{/if}}</div>
+      <div class="item-left-icon">{{#if (includes tags "favorite")}}<img src="images/item-icons/favorite.png" alt="">{{/if}}</div>
       <div class="item-group">
         
+        <div class="item-name">{{t name}}{{#if noteNums}}<sup class="item-note-ref">{{#each noteNums}}<span>{{this}}</span>{{/each}}</sup>{{/if}}
+            {{#if tags}}<span class="tag-icons">{{#each tags}}{{#unless (eq this "favorite")}}<span class="tag-icon"><img src="images/item-icons/{{this}}.png" alt="{{this}}"></span>{{/unless}}{{/each}}</span>{{/if}}
+        </div>
         <div class="item-row">
-          <div class="item-name">{{t name}}{{#if noteNums}}<sup class="item-note-ref">{{#each noteNums}}<span>{{this}}</span>{{/each}}</sup>{{/if}}
-            {{#if favorite}} <span class="fav-heart">&#9829;</span>{{/if}}
-          </div>
+          {{#if name.cn}}<div class="cn">{{name.cn}}</div>{{/if}}
           <div class="item-price">{{price}}&nbsp;€</div>
         </div>
-        {{#if name.cn}}<div class="cn">{{name.cn}}</div>{{/if}}
         {{#if description}}<div class="item-desc">{{t description}}<br><span class="cn">{{description.cn}}</span></div>{{/if}}
       </div>
       </div>
@@ -480,6 +507,14 @@
     if (typeof obj === 'string') return obj;
     if (!obj) return '';
     return obj[currentLang] || obj.fr || obj.en || '';
+  });
+
+  Handlebars.registerHelper('includes', function(arr, val) {
+    return arr && arr.includes(val);
+  });
+
+  Handlebars.registerHelper('eq', function(a, b) {
+    return a === b;
   });
 
   Handlebars.registerPartial('card', document.getElementById('tpl-card').innerHTML);
@@ -538,7 +573,7 @@
       });
       left.sort(function(a, b) { return (a.rank || 0) - (b.rank || 0); });
       right.sort(function(a, b) { return (a.rank || 0) - (b.rank || 0); });
-      return { leftSections: left, rightSections: right };
+      return { leftSections: left, rightSections: right, pageNote: menuData.pageNotes && menuData.pageNotes[p] || null };
     });
     document.getElementById('menu-output').innerHTML = tpl({
       pages: pages,
