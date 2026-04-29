@@ -122,8 +122,8 @@
     },
     "nouilles": {
       "page": 1,
-      "column": 1,
-      "rank": 2,
+      "column": 2,
+      "rank": 1,
       "sectionNotes": ["spicy"],
       "color": "#C9B89F",
       "icon": "images/icons/icon_nouilles.svg",
@@ -202,8 +202,8 @@
     },
     "vermicelles": {
       "page": 1,
-      "column": 2,
-      "rank": 1,
+      "column": 1,
+      "rank": 2,
       "sectionNotes": ["spicy"],
       "color": "#D4A8C8",
       "icon": "images/icons/icon_vermicelles.svg",
@@ -329,6 +329,14 @@
             "en": "Minced pork rice"
           },
           "price": "14.80"
+        },
+        {
+          "name": {
+            "fr": "Riz garni au poulet au piment vert",
+            "cn": "尖椒滑鸡盖饭",
+            "en": "Green Chili Chicken Rice Bowl"
+          },
+          "price": "16.80"
         },
         {
           "name": {
@@ -516,6 +524,13 @@
       "column": 1,
       "rank": 2,
       "color": "#8DB874",
+      "sectionImages": [
+        {
+          "src": "images/tea.png",
+           
+          "size": "18mm"
+        }
+      ],
       "icon": "images/icons/icon_thes.svg",
       "title": {
         "fr": "Thés & infusions",
@@ -750,9 +765,9 @@
       "sectionImages": [
         {
           "src": "images/sections/vinprune.png",
-          "right": "17mm",
-          "top": "70mm",
-          "size": "15mm"
+          "size": "15mm",
+          "right": "5mm",
+          "top":"-3mm"
         }
       ],
       "icon": "images/icons/icon_boissons.svg",
@@ -860,7 +875,7 @@
             "cn": "红豆沙汤圆",
             "en": "Red bean sticky rice balls"
           },
-          "price": "6.80"
+          "price": "7.20"
         },
         {
           "name": {
@@ -868,7 +883,7 @@
             "cn": "黑芝麻汤圆",
             "en": "Black sesame sticky rice balls"
           },
-          "price": "7.20"
+          "price": "6.80"
         },
         {
           "name": {

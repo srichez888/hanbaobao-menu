@@ -53,7 +53,6 @@
     align-items: center;
     justify-content: center;
     gap: 4mm;
-    margin-bottom: 5mm;
     padding-bottom: 3.5mm;
   }
 
@@ -402,9 +401,8 @@
   <div class="card-header">
     {{#if icon}}<img class="card-icon" src="{{icon}}" alt="">{{/if}}
     <div class="card-header-text">
-      <div class="card-title">{{t title}}</div>
-      {{#if title.cn}}<div class="cn">{{title.cn}}</div>{{/if}}
-      {{#if subtitle}}
+      <div class="card-title">{{t title}} {{#if title.cn}}<span class="cn">{{title.cn}}</span>{{/if}} </div>
+            {{#if subtitle}}
       <div class="card-subtitle-row">
         <span class="card-subtitle">{{t subtitle}}</span>
         {{#if chips}}
