@@ -388,7 +388,10 @@
             "cn": "麻婆豆腐饭",
             "en": "Mapo tofu rice"
           },
-          "price": "16.80"
+          "price": "16.80",
+          "tags": [
+            "spicy"
+          ]
         },
         {
           "name": {
@@ -404,7 +407,10 @@
             "cn": "尖椒滑鸡盖饭",
             "en": "Green Chili Chicken Rice Bowl"
           },
-          "price": "16.80"
+          "price": "16.80",
+          "tags": [
+            "spicy"
+          ]
         },
         {
           "name": {
