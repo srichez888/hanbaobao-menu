@@ -52,8 +52,8 @@
         {
           "name": {
             "fr": "Wontons en bouillon au porc",
-            "cn": "猪肉馄饨",
-            "en": "Pork wontons"
+            "cn": "猪肉汤馄饨",
+            "en": "Pork wontons soup"
           },
           "price": "13.80",
           "tags": [
@@ -63,24 +63,24 @@
         {
           "name": {
             "fr": "Wontons en bouillon aux crevettes",
-            "cn": "猪肉虾仁馄饨",
-            "en": "Shrimp wontons"
+            "cn": "猪肉虾仁汤馄饨",
+            "en": "Shrimp wontons  soup"
           },
           "price": "15.80"
         },
         {
           "name": {
             "fr": "Wontons en bouillon à la coriandre",
-            "cn": "猪肉香菜馄饨",
-            "en": "Coriander wontons"
+            "cn": "猪肉香菜汤馄饨",
+            "en": "Coriander wontons soup"
           },
           "price": "14.80"
         },
         {
           "name": {
             "fr": "Wontons en bouillon végétariens",
-            "cn": "素馄饨",
-            "en": "Veggie wontons"
+            "cn": "素汤馄饨",
+            "en": "Veggie wontons soup"
           },
           "price": "13.80",
           "tags": [
@@ -90,8 +90,8 @@
         {
           "name": {
             "fr": "Wontons en bouillon aux œufs de cent ans",
-            "cn": "猪肉皮蛋馄饨",
-            "en": "Century egg wontons"
+            "cn": "猪肉皮蛋汤馄饨",
+            "en": "Century egg wontons soup"
           },
           "price": "14.80",
           "tags": [
@@ -101,8 +101,8 @@
         {
           "name": {
             "fr": "Wontons sauce piquante au porc",
-            "cn": "猪肉馄饨",
-            "en": "Pork wontons"
+            "cn": "红油抄手猪肉馅",
+            "en": "Pork wontons in spicy sauce"
           },
           "price": "13.80",
           "tags": [
@@ -113,8 +113,8 @@
         {
           "name": {
             "fr": "Wontons sauce piquante aux crevettes",
-            "cn": "猪肉虾仁馄饨",
-            "en": "Shrimp wontons"
+            "cn": "红油抄手猪肉虾仁馅",
+            "en": "Shrimp wontons in spicy sauce"
           },
           "price": "15.80",
           "tags": [
@@ -124,8 +124,8 @@
         {
           "name": {
             "fr": "Wontons sauce piquante à la coriandre",
-            "cn": "猪肉香菜馄饨",
-            "en": "Coriander wontons"
+            "cn": "红油抄手猪肉香菜馅",
+            "en": "Coriander wontons in spicy sauce"
           },
           "price": "14.80",
           "tags": [
@@ -135,8 +135,8 @@
         {
           "name": {
             "fr": "Wontons sauce piquante végétariens",
-            "cn": "素馄饨",
-            "en": "Veggie wontons"
+            "cn": "红油抄手素馅",
+            "en": "Veggie wontons in spicy sauce"
           },
           "price": "13.80",
           "tags": [
@@ -147,8 +147,8 @@
         {
           "name": {
             "fr": "Wontons sauce piquante aux œufs de cent ans",
-            "cn": "猪肉皮蛋馄饨",
-            "en": "Century egg wontons"
+            "cn": "红油抄手猪肉皮蛋馅",
+            "en": "Century egg wontons in spicy sauce"
           },
           "price": "14.80",
           "tags": [
@@ -176,7 +176,10 @@
             "cn": "花生酱拌面",
             "en": "Peanut sauce noodles"
           },
-          "price": "12.80"
+          "price": "12.80",
+          "tags": [
+            "spicy"
+          ]
         },
         {
           "name": {
@@ -184,7 +187,10 @@
             "cn": "油泼面",
             "en": "Chili oil noodles"
           },
-          "price": "12.80"
+          "price": "12.80",
+          "tags": [
+            "spicy"
+          ]
         },
         {
           "name": {
@@ -194,7 +200,8 @@
           },
           "price": "13.80",
           "tags": [
-            "vegetarian"
+            "vegetarian",
+            "spicy"
           ]
         },
         {
@@ -203,7 +210,10 @@
             "cn": "肉臊杂酱拌面",
             "en": "Minced pork & vegetable noodles"
           },
-          "price": "14.80"
+          "price": "14.80",
+          "tags": [
+            "spicy"
+          ]
         },
         {
           "name": {
@@ -211,7 +221,10 @@
             "cn": "牛肉蔬菜拌面",
             "en": "Beef & vegetable noodles"
           },
-          "price": "15.80"
+          "price": "15.80",
+          "tags": [
+            "spicy"
+          ]
         },
         {
           "name": {
@@ -257,7 +270,10 @@
             "cn": "花生酱拌粉",
             "en": "Peanut Sauce Rice Vermicelli"
           },
-          "price": "12.80"
+          "price": "12.80",
+          "tags": [
+            "spicy"
+          ]
         },
         {
           "name": {
@@ -265,7 +281,10 @@
             "cn": "油泼米粉",
             "en": "Chili oil Rice Vermicelli"
           },
-          "price": "12.80"
+          "price": "12.80",
+          "tags": [
+            "spicy"
+          ]
         },
         {
           "name": {
@@ -275,7 +294,8 @@
           },
           "price": "13.80",
           "tags": [
-            "vegetarian"
+            "vegetarian",
+            "spicy"
           ]
         },
         {
@@ -284,7 +304,10 @@
             "cn": "肉臊杂酱拌粉",
             "en": "Minced pork & Vegetable Rice Vermicelli"
           },
-          "price": "14.80"
+          "price": "14.80",
+          "tags": [
+            "spicy"
+          ]
         },
         {
           "name": {
@@ -292,7 +315,10 @@
             "cn": "牛肉蔬菜拌粉",
             "en": "Beef & Vegetable Rice Vermicelli"
           },
-          "price": "16.80"
+          "price": "16.80",
+          "tags": [
+            "spicy"
+          ]
         },
         {
           "name": {
@@ -863,7 +889,10 @@
             "cn": "梅子酒 / 荔枝酒 / 桂花酒 (小壶)",
             "en": "Plum wine / lychee wine / osmanthus_wine (carafe)"
           },
-          "price": "9.80"
+          "price": "9.80",
+          "tags": [
+            "favorite"
+          ]
         },
         {
           "name": {
@@ -906,7 +935,10 @@
             "cn": "红豆沙汤圆",
             "en": "Red bean sticky rice balls"
           },
-          "price": "7.20"
+          "price": "7.20",
+          "tags": [
+            "favorite"
+          ]
         },
         {
           "name": {
@@ -914,7 +946,10 @@
             "cn": "黑芝麻汤圆",
             "en": "Black sesame sticky rice balls"
           },
-          "price": "6.80"
+          "price": "6.80",
+          "tags": [
+            "favorite"
+          ]
         },
         {
           "name": {
