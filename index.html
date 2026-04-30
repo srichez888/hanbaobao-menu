@@ -37,7 +37,7 @@
     min-height: 297mm;
     margin: 0 auto;
     padding: 7mm 7mm 6mm;
-    background-image: url('images/bg.png');
+    background-image: url('images/bg3.png');
     background-size: 210mm 297mm;
     background-repeat: no-repeat;
     background-position: top left;
@@ -114,7 +114,7 @@
   .menu-card {
     border-radius: 32px;
     border: 1.5px solid var(--c, #8D6E63);
-    background: color-mix(in srgb, var(--c, #8D6E63) 5%, #FCF5EECC);
+    background: var(--card-bg, color-mix(in srgb, var(--c, #8D6E63) 5%, #FCF5EECC));
     padding: 3mm 2mm 3mm 2mm;
     break-inside: avoid;
     page-break-inside: avoid;
@@ -366,8 +366,71 @@
     color: #FCF5EE;
   }
 
+  /* ── Color controls ── */
+  .color-controls {
+    position: fixed;
+    top: 22mm;
+    right: 8mm;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 2mm;
+    background: #FCF5EE;
+    border: 1.5px solid #8D6E63;
+    border-radius: 6mm;
+    padding: 2mm;
+  }
+
+  .color-controls button {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 10pt;
+    font-weight: 700;
+    padding: 1mm 3mm;
+    border: 1.5px solid #8D6E63;
+    border-radius: 4mm;
+    background: #FCF5EE;
+    color: #8D6E63;
+    cursor: pointer;
+  }
+
+  .color-controls button.active {
+    background: #8D6E63;
+    color: #FCF5EE;
+  }
+
+  .ctrl-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5mm;
+  }
+
+  .ctrl-row label,
+  .ctrl-row span {
+    font-size: 8pt;
+    font-weight: 600;
+    color: #8D6E63;
+    white-space: nowrap;
+  }
+
+  .ctrl-row input[type="color"] {
+    width: 6mm;
+    height: 6mm;
+    border: 1px solid #8D6E63;
+    border-radius: 2mm;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .ctrl-row input[type="range"] {
+    width: 15mm;
+    accent-color: #8D6E63;
+  }
+
+
+
   @media print {
     .lang-toggle { display: none; }
+    .color-controls { display: none; }
     html, body { background: transparent; margin: 0; padding: 0; }
     .page {
       width: 210mm;
@@ -388,6 +451,23 @@
 <div class="lang-toggle">
   <button id="btn-fr" class="active" onclick="setLang('fr')">FR</button>
   <button id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
+<div class="color-controls" id="color-controls">
+  <div class="ctrl-row">
+    <button id="btn-bg-mix" class="active" onclick="setBgMode('mix')">Background color</button>
+    <button id="btn-bg-unique" onclick="setBgMode('unique')">Background unique</button>
+  </div>
+  <div class="ctrl-row" id="mix-pct-row">
+    <label>Mix %</label>
+    <input type="range" id="mix-pct" min="0" max="50" value="5">
+    <span id="mix-pct-val">5%</span>
+  </div>
+  <div class="ctrl-row" id="global-picker-row">
+    <input type="color" id="base-color" value="#FCF5EE">
+    <input type="range" id="base-opacity" min="0" max="100" value="80">
+    <span id="base-opacity-val">80%</span>
+  </div>
 </div>
 
 <script id="tpl-menu" type="text/x-handlebars-template">
@@ -422,7 +502,7 @@
 </script>
 
 <script id="tpl-card" type="text/x-handlebars-template">
-<div class="menu-card" style="--c:{{color}};--c-text:{{cText}}">
+<div class="menu-card" style="--c:{{color}};--c-text:{{cText}}" data-section="{{id}}">
   <div class="card-header">
     {{#if icon}}<img class="card-icon" src="{{icon}}" alt="">{{/if}}
     <div class="card-header-text">
@@ -527,6 +607,60 @@
 
   var tpl = Handlebars.compile(document.getElementById('tpl-menu').innerHTML);
 
+  // ── Color control state ──
+  /* defaults: bgMode='mix' mixPct=5 color=#FCF5EE opacity=80 */
+  var bgMode = 'mix';
+  var mixPct = 5;
+  var globalColor = '#FCF5EE';
+  var globalOpacity = 80;
+
+  function toHex2(n) {
+    return Math.round(n).toString(16).padStart(2, '0');
+  }
+
+  function getBaseColorHex() {
+    return globalColor + toHex2(globalOpacity * 2.55);
+  }
+
+  function applyCardBackgrounds() {
+    var cards = document.querySelectorAll('.menu-card');
+    var baseHex = getBaseColorHex();
+    var bgColor;
+    if (bgMode === 'mix') {
+      bgColor = 'color-mix(in srgb, var(--c) ' + mixPct + '%, ' + baseHex + ')';
+    } else {
+      bgColor = baseHex;
+    }
+    cards.forEach(function(card) {
+      card.style.setProperty('--card-bg', bgColor);
+    });
+  }
+
+  window.setBgMode = function(mode) {
+    bgMode = mode;
+    document.getElementById('btn-bg-mix').className = mode === 'mix' ? 'active' : '';
+    document.getElementById('btn-bg-unique').className = mode === 'unique' ? 'active' : '';
+    document.getElementById('mix-pct-row').style.display = mode === 'mix' ? 'flex' : 'none';
+    applyCardBackgrounds();
+  };
+
+  document.getElementById('base-color').addEventListener('input', function() {
+    globalColor = this.value;
+    applyCardBackgrounds();
+  });
+
+  document.getElementById('base-opacity').addEventListener('input', function() {
+    globalOpacity = parseInt(this.value);
+    document.getElementById('base-opacity-val').textContent = this.value + '%';
+    applyCardBackgrounds();
+  });
+
+  document.getElementById('mix-pct').addEventListener('input', function() {
+    mixPct = parseInt(this.value);
+    document.getElementById('mix-pct-val').textContent = this.value + '%';
+    applyCardBackgrounds();
+  });
+
   function render() {
     var byPage = {};
     Object.keys(menuData.sections).forEach(function(key) {
@@ -577,6 +711,7 @@
       pages: pages,
       tagline: menuData.tagline
     });
+    applyCardBackgrounds();
   }
 
   window.setLang = function(lang) {
